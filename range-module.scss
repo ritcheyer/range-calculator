@@ -75,42 +75,28 @@ $range-color: #008dff;
     margin-right: auto;
 }
 
-#range .range-hero-wheels-left {
+.wheels-front,
+.wheels-rear {
     width: 100px;
     height: 100px;
-}
-#range .range-hero-wheels-left.ninteen {
-    background: url(images/rangemodule_wheels_left_19.png) center no-repeat;
-    background-size: cover;
-    left: 24.6%;
     position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wheels-front {
+    left: 24.6%;
     top: 36.1%;
 }
-#range .range-hero-wheels-left.twentyone {
-    background: url(images/rangemodule_wheels_left_21.png) center no-repeat;
-    background-size: cover;
-    left: 24.6%;
-    position: absolute;
-    top: 36.1%;
-}
-#range .range-hero-wheels-right {
-    width: 100px;
-    height: 100px;
-}
-#range .range-hero-wheels-right.ninteen {
-    background: url(images/rangemodule_wheels_right_19.png) center no-repeat;
-    background-size: cover;
+.wheels-rear {
     left: 63.8%;
-    position: absolute;
     top: 36.4%;
 }
-#range .range-hero-wheels-right.twentyone {
-    background: url(images/rangemodule_wheels_right_21.png) center no-repeat;
-    background-size: cover;
-    left: 63.8%;
-    position: absolute;
-    top: 36.4%;
-}
+.wheels-front.wheels-nineteen  { background-image: url(images/rangemodule_wheels_left_19.png); }
+.wheels-front.wheels-twentyone { background-image: url(images/rangemodule_wheels_left_21.png); }
+
+.wheels-rear.wheels-nineteen   { background-image: url(images/rangemodule_wheels_right_19.png); }
+.wheels-rear.wheels-twentyone  { background-image: url(images/rangemodule_wheels_right_21.png); }
 
 .controls {
     margin-top: 50px;
