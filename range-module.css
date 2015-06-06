@@ -1,281 +1,329 @@
+/**
+ * Usage:
+ * .your-class-name { @include show-for-region(reeu); }
+ */
+/**
+ * Usage:
+ * .your-class-name { @include hide-for-region(reeu); }
+ */
+/**
+ * Usage:
+ * .class { @include word-wrap(); }
+ * http://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+ */
+/**
+ * Usage:
+ * .class { @include ellipsis(); }
+ * http://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+ */
+/**
+ * Retina mixin - wraps content into correct media query
+ * http://css-tricks.com/snippets/css/retina-display-media-query (future proof media query)
+ *
+ * Usage:
+ * Images referenced in this fashion will automatically add the @1x image and the @2x image as supplied.
+ * If a cachebuster variable is supplied, it will be automatically added.
+ * $non-retina-image  - Required
+ * $retina-image      - Required
+ * $cachebuster       - Optional
+ *
+ * Any additional SASS that's supplied will be added as part of the retina media query,
+ * not as part of the non-retina selector.
+ *
+ * .class {
+ *     @include with-retina("non-retina-image", "retina-image", "optional cachebuster") {
+ *         background-size: contain;
+ *     }
+ * }
+ */
+.badge-motortype {
+  height: 28px;
+  height: 1.75rem;
+  overflow: hidden;
+  text-indent: -9999px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 22px; }
+  .BT40 .badge-motortype {
+    background-image: url('/images/vehicle-badges/40.svg?1429551910'); }
+    .no-svg .BT40 .badge-motortype {
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/40.png', sizingMethod='scale'); }
+  .BT60 .badge-motortype {
+    background-image: url('/images/vehicle-badges/60.svg?1429551910'); }
+    .no-svg .BT60 .badge-motortype {
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/60.png', sizingMethod='scale'); }
+  .BT70D .badge-motortype {
+    background-image: url('/images/vehicle-badges/70d.svg?1430843278'); }
+    .no-svg .BT70D .badge-motortype {
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/70d.png', sizingMethod='scale'); }
+  .BT85 .badge-motortype {
+    background-image: url('/images/vehicle-badges/85.svg?1429551910'); }
+    .no-svg .BT85 .badge-motortype {
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/85.png', sizingMethod='scale'); }
+  .BT85D .badge-motortype {
+    background-image: url('/images/vehicle-badges/85d.svg?1430843278'); }
+    .no-svg .BT85D .badge-motortype {
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/85d.png', sizingMethod='scale'); }
+  .PBT85 .badge-motortype {
+    background-image: url('/images/vehicle-badges/p85.svg?1429551910'); }
+    .no-svg .PBT85 .badge-motortype {
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/p85.png', sizingMethod='scale'); }
+  .P85plus .badge-motortype {
+    background-image: url('/images/vehicle-badges/p85plus.svg?1429551910'); }
+    .no-svg .P85plus .badge-motortype {
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/p85plus.png', sizingMethod='scale'); }
+  .P85D .badge-motortype {
+    background-image: url('/images/vehicle-badges/p85d.svg?1430843278');
+    background-size: auto 26px;
+    background-position-y: 0; }
+    .no-svg .P85D .badge-motortype {
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/p85d.png', sizingMethod='scale'); }
 
+.browser-incar .badge-motortype .P85D {
+  background-size: auto 22px;
+  height: 22px; }
 
 #range {
-    font-family: "Gotham A","Gotham B","M Hei PRC W45","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
-    position: relative;
-    text-align: center;
-}
+  font-family: "Gotham A","Gotham B","M Hei PRC W45","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-align: center; }
 
 .batt-stats {
-    position: relative;
-    width: 75%; /*728px;*/
-    margin-left: auto;
-    margin-right: auto;
-}
+  position: relative;
+  width: 75%;
+  /*728px;*/
+  margin-left: auto;
+  margin-right: auto; }
+
+.batterytype-ranges {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.battery-option {
+  padding: 20px;
+  padding: 1.25rem;
+  margin-bottom: 23px;
+  margin-bottom: 1.4375rem;
+  vertical-align: top;
+  background-color: white;
+  width: 23.40426%;
+  text-align: center; }
+
+[class*="range-controls-"] {
+  display: inline-block; }
+
+.spinner-controls [class*="spinner-controls"] {
+  color: #008dff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  vertical-align: middle;
+  font-size: 20px; }
+.spinner-controls .disabled {
+  color: #666666; }
 
 .wf-datalabel {
-    position: relative;
-    float:left;
-    width: 25%;
-}
+  position: relative;
+  float: left;
+  width: 25%; }
 
-#range .wf-datalabel-content {
-    position: relative;
-    color: #008dff;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 100;
-}
+.battery-range-content {
+  position: relative;
+  color: #008dff;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 100; }
 
-#range .wf-datalabel-units {
-    position: relative;
-    display: inline-block;
-    color: #008dff;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 100;
-    vertical-align: super;
-    margin-top: -30px;
-}
+.battery-range-units {
+  position: relative;
+  display: inline-block;
+  color: #008dff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 100;
+  vertical-align: super;
+  margin-top: -30px; }
 
-#range .section-content {
-    position: relative;
-    background-color: #fff;
-}
+.section-content {
+  position: relative;
+  background-color: #fff; }
 
-#range .range-hero {
-    background: url(images/models_rangemodule_hero.jpg) center no-repeat;
-    background-size: cover; /*1200px 469px;*/
-    width: 100%;
-    min-height: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
+.range-hero {
+  background: url(images/models_rangemodule_hero.jpg) center no-repeat;
+  background-size: cover;
+  /*1200px 469px;*/
+  width: 100%;
+  min-height: 350px;
+  margin-left: auto;
+  margin-right: auto; }
 
-#range .range-hero-wheels-left {
-    width: 100px;
-    height: 100px;
-}
-#range .range-hero-wheels-left.ninteen {
-    background: url(images/rangemodule_wheels_left_19.png) center no-repeat;
-    background-size: cover;
-    left: 24.6%;
-    position: absolute;
-    top: 36.1%;
-}
-#range .range-hero-wheels-left.twentyone {
-    background: url(images/rangemodule_wheels_left_21.png) center no-repeat;
-    background-size: cover;
-    left: 24.6%;
-    position: absolute;
-    top: 36.1%;
-}
-#range .range-hero-wheels-right {
-    width: 100px;
-    height: 100px;
-}
-#range .range-hero-wheels-right.ninteen {
-    background: url(images/rangemodule_wheels_right_19.png) center no-repeat;
-    background-size: cover;
-    left: 63.8%;
-    position: absolute;
-    top: 36.4%;
-}
-#range .range-hero-wheels-right.twentyone {
-    background: url(images/rangemodule_wheels_right_21.png) center no-repeat;
-    background-size: cover;
-    left: 63.8%;
-    position: absolute;
-    top: 36.4%;
-}
+.wheels-front,
+.wheels-rear {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.wheels-front {
+  left: 24.6%;
+  top: 36.1%; }
+
+.wheels-rear {
+  left: 63.8%;
+  top: 36.4%; }
+
+.wheels-front.wheels-nineteen {
+  background-image: url(images/rangemodule_wheels_left_19.png); }
+
+.wheels-front.wheels-twentyone {
+  background-image: url(images/rangemodule_wheels_left_21.png); }
+
+.wheels-rear.wheels-nineteen {
+  background-image: url(images/rangemodule_wheels_right_19.png); }
+
+.wheels-rear.wheels-twentyone {
+  background-image: url(images/rangemodule_wheels_right_21.png); }
 
 .controls {
-    margin-top: 50px;
-    position: relative;
-    clear:both;
-}
+  margin-top: 50px;
+  position: relative;
+  clear: both; }
 
 .controls .wf-datalabel {
-    width: 190px;
-}
-
-.controls .wf-datalabel-container {}
+  width: 190px; }
 
 .controls .controls-datalabel-title {
-    text-align: left;
-    font-size: 16px;
-    color: #333;
-}
+  text-align: left;
+  font-size: 16px;
+  color: #333; }
 
 .controls .controls-control-box {
-    margin-top: 15px;
-    position: relative;
-    width: 190px;
-    height: 65px;
-    border: 1px solid #ccc;
-    background-color: #f7f7f7;
-    float: left;
-}
+  margin-top: 15px;
+  position: relative;
+  width: 190px;
+  height: 65px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  float: left; }
 
 .controls .controls-control-box.selected {
-    border: 2px solid #3399ff;
-}
+  border: 2px solid #3399ff; }
 
 .controls .controls-data {
-    position: relative;
-    display: inline-block;
-    margin-top: 8px;
-    color: #000;
-    font-size: 35px;
-    font-weight: 200;
-}
+  position: relative;
+  display: inline-block;
+  margin-top: 8px;
+  color: #000;
+  font-size: 35px;
+  font-weight: 200; }
 
 .controls .controls-unit {
-    position: relative;
-    display: inline-block;
-    font-size: 15px;
-    color: #000;
-}
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  color: #000; }
 
 .controls .controls-arrows {
-    position: relative;
-    display:  inline-block;
-    float: right;
-    font-size: 20px;
-    margin-right:8px;
-}
+  position: relative;
+  display: inline-block;
+  float: right;
+  font-size: 20px;
+  margin-right: 8px; }
 
 .controls .separator {
-    width: 1px;
-    border-right: 2px solid #ccc;
-    margin-right: 27px;
-    position: relative;
-    float: left;
-    height: 106px;
-    margin-left: 27px;
-}
+  width: 1px;
+  border-right: 2px solid #ccc;
+  margin-right: 27px;
+  position: relative;
+  float: left;
+  height: 106px;
+  margin-left: 27px; }
 
 .controls #controls-ac {
-    position: relative;
-    float: left;
-    width: 120px;
-    height: 130px;
-    margin-left: 19px;
-    margin-right: -13px;
-}
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 130px;
+  margin-left: 19px;
+  margin-right: -13px; }
 
 .controls #controls-ac-onoff {
-    width: 120px;
-    height: 130px;
-}
+  width: 120px;
+  height: 130px; }
 
 .controls #controls-ac-onoff.acoff {
-    background: url(images/models_rangemodule_acoff.png) center 14px no-repeat;
-    background-size: 120px 121px;
-}
+  background: url(images/models_rangemodule_acoff.png) center 14px no-repeat;
+  background-size: 120px 121px; }
 
 .controls #controls-ac-onoff.acon {
-    background: url(images/models_rangemodule_acon.png) center 14px no-repeat;
-    background-size: 120px 121px;
-}
+  background: url(images/models_rangemodule_acon.png) center 14px no-repeat;
+  background-size: 120px 121px; }
 
 .controls #controls-ac-onoff.heaton {
-    background: url(images/models_rangemodule_heaton.png) center 14px no-repeat;
-    background-size: 120px 121px;
-}
+  background: url(images/models_rangemodule_heaton.png) center 14px no-repeat;
+  background-size: 120px 121px; }
 
 .controls #controls-ac-onoff.heatoff {
-    background: url(images/models_rangemodule_heatoff.png) center 14px no-repeat;
-    background-size: 120px 121px;
-}
+  background: url(images/models_rangemodule_heatoff.png) center 14px no-repeat;
+  background-size: 120px 121px; }
 
 #controls-temp .controls-unit {
-    font-size:28px;
-    font-weight: 100;
-    vertical-align: super;
-}
+  font-size: 28px;
+  font-weight: 100;
+  vertical-align: super; }
 
 .controls #controls-wheels-19 {
-    cursor: pointer;
-}
+  cursor: pointer; }
 
 .controls #controls-wheels-21 {
-    margin-left: 15px;
-    cursor: pointer;
-}
+  margin-left: 15px;
+  cursor: pointer; }
 
 .controls .controls-arrows-up {
-    display: block;
-    cursor: pointer;
-    background: url(images/models_rangemodule_arrowup.png) center 5px no-repeat;
-    background-size: 41px 21px;
-    width: 41px;
-    height: 21px;
-}
+  display: block;
+  cursor: pointer;
+  background: url(images/models_rangemodule_arrowup.png) center 5px no-repeat;
+  background-size: 41px 21px;
+  width: 41px;
+  height: 21px; }
+
 .controls .controls-arrows-up.disabled {
-    background: url(images/models_rangemodule_arrowup_gray.png) center 5px no-repeat;
-    background-size: 41px 21px;
-}
+  background: url(images/models_rangemodule_arrowup_gray.png) center 5px no-repeat;
+  background-size: 41px 21px; }
+
 .controls .controls-arrows-down {
-    display: block;
-    cursor: pointer;
-    background: url(images/models_rangemodule_arrowdown.png) center -5px no-repeat;
-    background-size: 41px 21px;
-    width: 41px;
-    height: 21px;
-}
+  display: block;
+  cursor: pointer;
+  background: url(images/models_rangemodule_arrowdown.png) center -5px no-repeat;
+  background-size: 41px 21px;
+  width: 41px;
+  height: 21px; }
+
 .controls .controls-arrows-down.disabled {
-    background: url(images/models_rangemodule_arrowdown_gray.png) center -5px no-repeat;
-    background-size: 41px 21px;
-}
+  background: url(images/models_rangemodule_arrowdown_gray.png) center -5px no-repeat;
+  background-size: 41px 21px; }
 
 .controls .controls-separator {
-    background: url(images/models_rangemodule_separator.png) center no-repeat;
-    background-size: 41px 21px;
-    width: 41px;
-    height: 20px;
-}
+  background: url(images/models_rangemodule_separator.png) center no-repeat;
+  background-size: 41px 21px;
+  width: 41px;
+  height: 20px; }
 
 #controls-wheels-19 .controls-data,
 #controls-wheels-21 .controls-data {
-    margin-top: 0px;
-    font-size: 20px;
-}
+  margin-top: 0px;
+  font-size: 20px; }
 
 .controls-wheels-19-icon {
-    display: inline-block;
-    margin-top: 11px;
-}
+  display: inline-block;
+  margin-top: 11px; }
 
 .controls-wheels-21-icon {
-    display: inline-block;
-    margin-top: 11px;
-}
+  display: inline-block;
+  margin-top: 11px; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=range-module.css.map */

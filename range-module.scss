@@ -1,4 +1,10 @@
+@import "../../../bin/tesla/7/sites_d7/all/themes/custom/tesla_theme/scss/variables";
+@import "../../../bin/tesla/7/sites_d7/all/themes/custom/tesla_theme/scss/mixins";
+@import "../../../bin/tesla/7/sites_d7/all/themes/custom/tesla_theme/scss/functions";
+@import "_vehicle-badges";
 
+// custom variables
+$range-color: #008dff;
 
 #range {
     font-family: "Gotham A","Gotham B","M Hei PRC W45","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
