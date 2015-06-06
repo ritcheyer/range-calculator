@@ -12,12 +12,29 @@ $range-color: #008dff;
     text-align: center;
 }
 
+// battery section
 .batt-stats {
     position: relative;
     width: 75%; /*728px;*/
     margin-left: auto;
     margin-right: auto;
 }
+.batterytype-ranges {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.battery-option {
+    padding: 20px;
+    padding: 1.25rem;
+    margin-bottom: 23px;
+    margin-bottom: 1.4375rem;
+    vertical-align: top;
+    background-color: white;
+    width: 23.40426%;
+    text-align: center;
+}
+
 
 .wf-datalabel {
     position: relative;
