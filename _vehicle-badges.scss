@@ -1,0 +1,68 @@
+// -------------------------------------------------------------------------
+// TITLE: _motor-badges.scss
+// DESCRIPTION: Whenever badges are used on teslamotors.com this file should be included.
+//
+// TABLE OF CONTENTS
+//  1. Base ruleset
+//
+// -------------------------------------------------------------------------
+
+// 1. Base ruleset
+// -------------------------------------------------------------------------
+.badge-motortype {
+    @include scale(height, 28px);
+
+    overflow: hidden;
+    text-indent: -9999px;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 22px;
+
+    .BT40 &    {
+        background-image: image-url('vehicle-badges/40.svg');
+        .no-svg & { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/40.png', sizingMethod='scale'); }
+    }
+    .BT60 &    {
+        background-image: image-url('vehicle-badges/60.svg');
+        .no-svg & { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/60.png', sizingMethod='scale'); }
+    }
+    .BT70D &    {
+        background-image: image-url('vehicle-badges/70d.svg');
+        .no-svg & { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/70d.png', sizingMethod='scale'); }
+    }
+    .BT85 &    {
+        background-image: image-url('vehicle-badges/85.svg');
+        .no-svg & { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/85.png', sizingMethod='scale'); }
+    }
+    .BT85D &   {
+        background-image: image-url('vehicle-badges/85d.svg');
+        .no-svg & { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/85d.png', sizingMethod='scale'); }
+    }
+    .PBT85 &   {
+        background-image: image-url('vehicle-badges/p85.svg');
+        .no-svg & { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/p85.png', sizingMethod='scale'); }
+    }
+    .P85plus & {
+        background-image: image-url('vehicle-badges/p85plus.svg');
+        .no-svg & { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/p85plus.png', sizingMethod='scale'); }
+    }
+    .P85D &    {
+        background-image: image-url('vehicle-badges/p85d.svg');
+        background-size: auto 26px;
+        background-position-y: 0;
+        .no-svg & { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/tesla_theme/assets/img/vehicle-badges/p85d.png', sizingMethod='scale'); }
+
+
+    }
+}
+// because our in-car browser is old.
+.browser-incar {
+    .badge-motortype {
+        .P85D {
+            background-size: auto 22px;
+            height: 22px;
+        }
+    }
+}
