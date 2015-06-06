@@ -123,17 +123,15 @@ function updateUI() {
     if (rangeSettings.wheels === "19") {
         $("#controls-wheels-21 .controls-control-box").removeClass("selected");
         $("#controls-wheels-19 .controls-control-box").addClass("selected");
-        $(".range-hero .range-hero-wheels-left").removeClass("twentyone");
-        $(".range-hero .range-hero-wheels-right").removeClass("twentyone");
-        $(".range-hero .range-hero-wheels-left").addClass("nineteen");
-        $(".range-hero .range-hero-wheels-right").addClass("nineteen");
+
+        $(".wheels-front").removeClass("wheels-twentyone").addClass("wheels-nineteen");
+        $(".wheels-rear").removeClass("wheels-twentyone").addClass("wheels-nineteen");
     } else {
         $("#controls-wheels-19 .controls-control-box").removeClass("selected");
         $("#controls-wheels-21 .controls-control-box").addClass("selected");
-        $(".range-hero .range-hero-wheels-left").removeClass("nineteen");
-        $(".range-hero .range-hero-wheels-right").removeClass("nineteen");
-        $(".range-hero .range-hero-wheels-left").addClass("twentyone");
-        $(".range-hero .range-hero-wheels-right").addClass("twentyone");
+
+        $(".wheels-front").removeClass("wheels-nineteen").addClass("wheels-twentyone");
+        $(".wheels-rear").removeClass("wheels-nineteen").addClass("wheels-twentyone");
     }
 
     $("#controls-ac #controls-ac-onoff").removeClass();
