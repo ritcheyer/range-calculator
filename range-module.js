@@ -82,9 +82,9 @@ function initializeRangeData() {
             $.getJSON(jsonDir + region + 'P85DMiles.json') )
     // set global data for later use
     .done(function( json1, json2, json3, json4 ) {
-            rangeData.rangedata_70D = json1[0];
-            rangeData.rangedata_85 = json2[0];
-            rangeData.rangedata_85D = json3[0];
+            rangeData.rangedata_70D  = json1[0];
+            rangeData.rangedata_85   = json2[0];
+            rangeData.rangedata_85D  = json3[0];
             rangeData.rangedata_P85D = json4[0];
     })
     // update the UI
