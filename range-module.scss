@@ -42,7 +42,7 @@ $range-color: #008dff;
     width: 25%;
 }
 
-#range .wf-datalabel-content {
+.battery-range-content {
     position: relative;
     color: $range-color;
     font-size: 2.5rem;
@@ -50,7 +50,7 @@ $range-color: #008dff;
     font-weight: 100;
 }
 
-#range .wf-datalabel-units {
+.battery-range-units {
     position: relative;
     display: inline-block;
     color: $range-color;
@@ -61,12 +61,12 @@ $range-color: #008dff;
     margin-top: -30px;
 }
 
-#range .section-content {
+.section-content {
     position: relative;
     background-color: #fff;
 }
 
-#range .range-hero {
+.range-hero {
     background: url(images/models_rangemodule_hero.jpg) center no-repeat;
     background-size: cover; /*1200px 469px;*/
     width: 100%;
