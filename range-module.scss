@@ -44,7 +44,7 @@ $range-color: #008dff;
 
 #range .wf-datalabel-content {
     position: relative;
-    color: #008dff;
+    color: $range-color;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 100;
@@ -53,7 +53,7 @@ $range-color: #008dff;
 #range .wf-datalabel-units {
     position: relative;
     display: inline-block;
-    color: #008dff;
+    color: $range-color;
     font-size: 1rem;
     font-style: normal;
     font-weight: 100;
@@ -274,31 +274,3 @@ $range-color: #008dff;
     display: inline-block;
     margin-top: 11px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
