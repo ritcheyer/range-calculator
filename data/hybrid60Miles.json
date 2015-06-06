@@ -1,0 +1,2018 @@
+[ 
+ {
+   "temp": -10,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 248,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 301 },
+      { "mph": 45, "miles": 279 },
+      { "mph": 50, "miles": 257 },
+      { "mph": 55, "miles": 236 },
+      { "mph": 60, "miles": 217 },
+      { "mph": 65, "miles": 199 },
+      { "mph": 70, "miles": 183 },
+      { "mph": 75, "miles": 169 },
+      { "mph": 80, "miles": 156 },
+      { "mph": 85, "miles": 143 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 155,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 217 },
+      { "mph": 45, "miles": 215 },
+      { "mph": 50, "miles": 206 },
+      { "mph": 55, "miles": 196 },
+      { "mph": 60, "miles": 185 },
+      { "mph": 65, "miles": 173 },
+      { "mph": 70, "miles": 163 },
+      { "mph": 75, "miles": 152 },
+      { "mph": 80, "miles": 142 },
+      { "mph": 85, "miles": 132 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 245,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 294 },
+      { "mph": 45, "miles": 272 },
+      { "mph": 50, "miles": 249 },
+      { "mph": 55, "miles": 228 },
+      { "mph": 60, "miles": 208 },
+      { "mph": 65, "miles": 191 },
+      { "mph": 70, "miles": 175 },
+      { "mph": 75, "miles": 161 },
+      { "mph": 80, "miles": 148 },
+      { "mph": 85, "miles": 136 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 153,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 212 },
+      { "mph": 45, "miles": 209 },
+      { "mph": 50, "miles": 200 },
+      { "mph": 55, "miles": 189 },
+      { "mph": 60, "miles": 178 },
+      { "mph": 65, "miles": 167 },
+      { "mph": 70, "miles": 156 },
+      { "mph": 75, "miles": 146 },
+      { "mph": 80, "miles": 136 },
+      { "mph": 85, "miles": 126 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 237,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 293 },
+      { "mph": 45, "miles": 273 },
+      { "mph": 50, "miles": 253 },
+      { "mph": 55, "miles": 233 },
+      { "mph": 60, "miles": 214 },
+      { "mph": 65, "miles": 197 },
+      { "mph": 70, "miles": 181 },
+      { "mph": 75, "miles": 167 },
+      { "mph": 80, "miles": 155 },
+      { "mph": 85, "miles": 142 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 149,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 211 },
+      { "mph": 45, "miles": 210 },
+      { "mph": 50, "miles": 202 },
+      { "mph": 55, "miles": 193 },
+      { "mph": 60, "miles": 182 },
+      { "mph": 65, "miles": 172 },
+      { "mph": 70, "miles": 161 },
+      { "mph": 75, "miles": 151 },
+      { "mph": 80, "miles": 141 },
+      { "mph": 85, "miles": 132 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 235,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 286 },
+      { "mph": 45, "miles": 266 },
+      { "mph": 50, "miles": 245 },
+      { "mph": 55, "miles": 225 },
+      { "mph": 60, "miles": 206 },
+      { "mph": 65, "miles": 189 },
+      { "mph": 70, "miles": 174 },
+      { "mph": 75, "miles": 160 },
+      { "mph": 80, "miles": 147 },
+      { "mph": 85, "miles": 135 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 147,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 206 },
+      { "mph": 45, "miles": 204 },
+      { "mph": 50, "miles": 196 },
+      { "mph": 55, "miles": 186 },
+      { "mph": 60, "miles": 175 },
+      { "mph": 65, "miles": 165 },
+      { "mph": 70, "miles": 154 },
+      { "mph": 75, "miles": 144 },
+      { "mph": 80, "miles": 135 },
+      { "mph": 85, "miles": 125 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 254,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 309 },
+      { "mph": 45, "miles": 285 },
+      { "mph": 50, "miles": 261 },
+      { "mph": 55, "miles": 238 },
+      { "mph": 60, "miles": 217 },
+      { "mph": 65, "miles": 199 },
+      { "mph": 70, "miles": 182 },
+      { "mph": 75, "miles": 167 },
+      { "mph": 80, "miles": 154 },
+      { "mph": 85, "miles": 141 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 159,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 222 },
+      { "mph": 45, "miles": 219 },
+      { "mph": 50, "miles": 209 },
+      { "mph": 55, "miles": 197 },
+      { "mph": 60, "miles": 185 },
+      { "mph": 65, "miles": 173 },
+      { "mph": 70, "miles": 162 },
+      { "mph": 75, "miles": 151 },
+      { "mph": 80, "miles": 140 },
+      { "mph": 85, "miles": 130 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 250,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 301 },
+      { "mph": 45, "miles": 277 },
+      { "mph": 50, "miles": 253 },
+      { "mph": 55, "miles": 230 },
+      { "mph": 60, "miles": 209 },
+      { "mph": 65, "miles": 191 },
+      { "mph": 70, "miles": 174 },
+      { "mph": 75, "miles": 160 },
+      { "mph": 80, "miles": 146 },
+      { "mph": 85, "miles": 134 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 157,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 217 },
+      { "mph": 45, "miles": 213 },
+      { "mph": 50, "miles": 202 },
+      { "mph": 55, "miles": 190 },
+      { "mph": 60, "miles": 178 },
+      { "mph": 65, "miles": 166 },
+      { "mph": 70, "miles": 155 },
+      { "mph": 75, "miles": 144 },
+      { "mph": 80, "miles": 134 },
+      { "mph": 85, "miles": 124 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 243,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 300 },
+      { "mph": 45, "miles": 279 },
+      { "mph": 50, "miles": 256 },
+      { "mph": 55, "miles": 234 },
+      { "mph": 60, "miles": 214 },
+      { "mph": 65, "miles": 196 },
+      { "mph": 70, "miles": 180 },
+      { "mph": 75, "miles": 166 },
+      { "mph": 80, "miles": 153 },
+      { "mph": 85, "miles": 140 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 152,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 216 },
+      { "mph": 45, "miles": 214 },
+      { "mph": 50, "miles": 205 },
+      { "mph": 55, "miles": 194 },
+      { "mph": 60, "miles": 183 },
+      { "mph": 65, "miles": 171 },
+      { "mph": 70, "miles": 160 },
+      { "mph": 75, "miles": 150 },
+      { "mph": 80, "miles": 140 },
+      { "mph": 85, "miles": 129 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 240,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 293 },
+      { "mph": 45, "miles": 271 },
+      { "mph": 50, "miles": 248 },
+      { "mph": 55, "miles": 226 },
+      { "mph": 60, "miles": 206 },
+      { "mph": 65, "miles": 189 },
+      { "mph": 70, "miles": 173 },
+      { "mph": 75, "miles": 158 },
+      { "mph": 80, "miles": 146 },
+      { "mph": 85, "miles": 133 }
+     ]
+    },
+ {
+   "temp": -10,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 150,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 211 },
+      { "mph": 45, "miles": 208 },
+      { "mph": 50, "miles": 199 },
+      { "mph": 55, "miles": 188 },
+      { "mph": 60, "miles": 176 },
+      { "mph": 65, "miles": 165 },
+      { "mph": 70, "miles": 153 },
+      { "mph": 75, "miles": 143 },
+      { "mph": 80, "miles": 133 },
+      { "mph": 85, "miles": 123 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 252,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 313 },
+      { "mph": 45, "miles": 290 },
+      { "mph": 50, "miles": 267 },
+      { "mph": 55, "miles": 246 },
+      { "mph": 60, "miles": 225 },
+      { "mph": 65, "miles": 207 },
+      { "mph": 70, "miles": 190 },
+      { "mph": 75, "miles": 176 },
+      { "mph": 80, "miles": 162 },
+      { "mph": 85, "miles": 149 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 177,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 246 },
+      { "mph": 45, "miles": 237 },
+      { "mph": 50, "miles": 225 },
+      { "mph": 55, "miles": 212 },
+      { "mph": 60, "miles": 198 },
+      { "mph": 65, "miles": 185 },
+      { "mph": 70, "miles": 173 },
+      { "mph": 75, "miles": 161 },
+      { "mph": 80, "miles": 150 },
+      { "mph": 85, "miles": 139 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 249,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 306 },
+      { "mph": 45, "miles": 282 },
+      { "mph": 50, "miles": 259 },
+      { "mph": 55, "miles": 237 },
+      { "mph": 60, "miles": 217 },
+      { "mph": 65, "miles": 199 },
+      { "mph": 70, "miles": 182 },
+      { "mph": 75, "miles": 168 },
+      { "mph": 80, "miles": 154 },
+      { "mph": 85, "miles": 141 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 175,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 241 },
+      { "mph": 45, "miles": 230 },
+      { "mph": 50, "miles": 218 },
+      { "mph": 55, "miles": 204 },
+      { "mph": 60, "miles": 191 },
+      { "mph": 65, "miles": 178 },
+      { "mph": 70, "miles": 166 },
+      { "mph": 75, "miles": 154 },
+      { "mph": 80, "miles": 143 },
+      { "mph": 85, "miles": 132 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 242,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 305 },
+      { "mph": 45, "miles": 284 },
+      { "mph": 50, "miles": 263 },
+      { "mph": 55, "miles": 242 },
+      { "mph": 60, "miles": 222 },
+      { "mph": 65, "miles": 205 },
+      { "mph": 70, "miles": 189 },
+      { "mph": 75, "miles": 174 },
+      { "mph": 80, "miles": 161 },
+      { "mph": 85, "miles": 148 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 170,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 240 },
+      { "mph": 45, "miles": 232 },
+      { "mph": 50, "miles": 221 },
+      { "mph": 55, "miles": 208 },
+      { "mph": 60, "miles": 196 },
+      { "mph": 65, "miles": 183 },
+      { "mph": 70, "miles": 171 },
+      { "mph": 75, "miles": 160 },
+      { "mph": 80, "miles": 149 },
+      { "mph": 85, "miles": 138 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 239,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 298 },
+      { "mph": 45, "miles": 276 },
+      { "mph": 50, "miles": 255 },
+      { "mph": 55, "miles": 234 },
+      { "mph": 60, "miles": 214 },
+      { "mph": 65, "miles": 197 },
+      { "mph": 70, "miles": 181 },
+      { "mph": 75, "miles": 166 },
+      { "mph": 80, "miles": 153 },
+      { "mph": 85, "miles": 141 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 168,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 235 },
+      { "mph": 45, "miles": 225 },
+      { "mph": 50, "miles": 214 },
+      { "mph": 55, "miles": 201 },
+      { "mph": 60, "miles": 188 },
+      { "mph": 65, "miles": 176 },
+      { "mph": 70, "miles": 164 },
+      { "mph": 75, "miles": 153 },
+      { "mph": 80, "miles": 142 },
+      { "mph": 85, "miles": 132 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 258,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 321 },
+      { "mph": 45, "miles": 296 },
+      { "mph": 50, "miles": 271 },
+      { "mph": 55, "miles": 248 },
+      { "mph": 60, "miles": 226 },
+      { "mph": 65, "miles": 207 },
+      { "mph": 70, "miles": 189 },
+      { "mph": 75, "miles": 174 },
+      { "mph": 80, "miles": 160 },
+      { "mph": 85, "miles": 146 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 182,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 253 },
+      { "mph": 45, "miles": 241 },
+      { "mph": 50, "miles": 228 },
+      { "mph": 55, "miles": 213 },
+      { "mph": 60, "miles": 199 },
+      { "mph": 65, "miles": 185 },
+      { "mph": 70, "miles": 172 },
+      { "mph": 75, "miles": 160 },
+      { "mph": 80, "miles": 148 },
+      { "mph": 85, "miles": 137 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 255,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 314 },
+      { "mph": 45, "miles": 287 },
+      { "mph": 50, "miles": 263 },
+      { "mph": 55, "miles": 239 },
+      { "mph": 60, "miles": 217 },
+      { "mph": 65, "miles": 198 },
+      { "mph": 70, "miles": 181 },
+      { "mph": 75, "miles": 166 },
+      { "mph": 80, "miles": 152 },
+      { "mph": 85, "miles": 139 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 179,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 247 },
+      { "mph": 45, "miles": 234 },
+      { "mph": 50, "miles": 221 },
+      { "mph": 55, "miles": 206 },
+      { "mph": 60, "miles": 191 },
+      { "mph": 65, "miles": 178 },
+      { "mph": 70, "miles": 165 },
+      { "mph": 75, "miles": 153 },
+      { "mph": 80, "miles": 141 },
+      { "mph": 85, "miles": 130 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 247,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 313 },
+      { "mph": 45, "miles": 289 },
+      { "mph": 50, "miles": 266 },
+      { "mph": 55, "miles": 244 },
+      { "mph": 60, "miles": 223 },
+      { "mph": 65, "miles": 204 },
+      { "mph": 70, "miles": 188 },
+      { "mph": 75, "miles": 172 },
+      { "mph": 80, "miles": 159 },
+      { "mph": 85, "miles": 145 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 174,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 246 },
+      { "mph": 45, "miles": 236 },
+      { "mph": 50, "miles": 224 },
+      { "mph": 55, "miles": 210 },
+      { "mph": 60, "miles": 196 },
+      { "mph": 65, "miles": 183 },
+      { "mph": 70, "miles": 170 },
+      { "mph": 75, "miles": 158 },
+      { "mph": 80, "miles": 147 },
+      { "mph": 85, "miles": 136 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 244,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 305 },
+      { "mph": 45, "miles": 281 },
+      { "mph": 50, "miles": 258 },
+      { "mph": 55, "miles": 236 },
+      { "mph": 60, "miles": 215 },
+      { "mph": 65, "miles": 196 },
+      { "mph": 70, "miles": 180 },
+      { "mph": 75, "miles": 165 },
+      { "mph": 80, "miles": 151 },
+      { "mph": 85, "miles": 138 }
+     ]
+    },
+ {
+   "temp": 0,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 172,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 240 },
+      { "mph": 45, "miles": 230 },
+      { "mph": 50, "miles": 217 },
+      { "mph": 55, "miles": 203 },
+      { "mph": 60, "miles": 189 },
+      { "mph": 65, "miles": 176 },
+      { "mph": 70, "miles": 163 },
+      { "mph": 75, "miles": 151 },
+      { "mph": 80, "miles": 140 },
+      { "mph": 85, "miles": 129 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 253,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 317 },
+      { "mph": 45, "miles": 294 },
+      { "mph": 50, "miles": 272 },
+      { "mph": 55, "miles": 250 },
+      { "mph": 60, "miles": 229 },
+      { "mph": 65, "miles": 211 },
+      { "mph": 70, "miles": 194 },
+      { "mph": 75, "miles": 179 },
+      { "mph": 80, "miles": 165 },
+      { "mph": 85, "miles": 152 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 205,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 268 },
+      { "mph": 45, "miles": 254 },
+      { "mph": 50, "miles": 248 },
+      { "mph": 55, "miles": 231 },
+      { "mph": 60, "miles": 215 },
+      { "mph": 65, "miles": 199 },
+      { "mph": 70, "miles": 185 },
+      { "mph": 75, "miles": 171 },
+      { "mph": 80, "miles": 159 },
+      { "mph": 85, "miles": 146 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 250,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 309 },
+      { "mph": 45, "miles": 286 },
+      { "mph": 50, "miles": 263 },
+      { "mph": 55, "miles": 241 },
+      { "mph": 60, "miles": 221 },
+      { "mph": 65, "miles": 202 },
+      { "mph": 70, "miles": 186 },
+      { "mph": 75, "miles": 171 },
+      { "mph": 80, "miles": 157 },
+      { "mph": 85, "miles": 144 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 202,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 261 },
+      { "mph": 45, "miles": 247 },
+      { "mph": 50, "miles": 240 },
+      { "mph": 55, "miles": 223 },
+      { "mph": 60, "miles": 207 },
+      { "mph": 65, "miles": 191 },
+      { "mph": 70, "miles": 177 },
+      { "mph": 75, "miles": 164 },
+      { "mph": 80, "miles": 151 },
+      { "mph": 85, "miles": 139 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 242,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 309 },
+      { "mph": 45, "miles": 288 },
+      { "mph": 50, "miles": 267 },
+      { "mph": 55, "miles": 246 },
+      { "mph": 60, "miles": 226 },
+      { "mph": 65, "miles": 209 },
+      { "mph": 70, "miles": 192 },
+      { "mph": 75, "miles": 177 },
+      { "mph": 80, "miles": 164 },
+      { "mph": 85, "miles": 151 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 196,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 261 },
+      { "mph": 45, "miles": 248 },
+      { "mph": 50, "miles": 244 },
+      { "mph": 55, "miles": 228 },
+      { "mph": 60, "miles": 212 },
+      { "mph": 65, "miles": 197 },
+      { "mph": 70, "miles": 183 },
+      { "mph": 75, "miles": 170 },
+      { "mph": 80, "miles": 158 },
+      { "mph": 85, "miles": 146 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 240,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 302 },
+      { "mph": 45, "miles": 280 },
+      { "mph": 50, "miles": 259 },
+      { "mph": 55, "miles": 238 },
+      { "mph": 60, "miles": 218 },
+      { "mph": 65, "miles": 200 },
+      { "mph": 70, "miles": 184 },
+      { "mph": 75, "miles": 170 },
+      { "mph": 80, "miles": 156 },
+      { "mph": 85, "miles": 143 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 194,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 255 },
+      { "mph": 45, "miles": 242 },
+      { "mph": 50, "miles": 236 },
+      { "mph": 55, "miles": 220 },
+      { "mph": 60, "miles": 204 },
+      { "mph": 65, "miles": 189 },
+      { "mph": 70, "miles": 175 },
+      { "mph": 75, "miles": 162 },
+      { "mph": 80, "miles": 150 },
+      { "mph": 85, "miles": 139 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 259,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 325 },
+      { "mph": 45, "miles": 300 },
+      { "mph": 50, "miles": 275 },
+      { "mph": 55, "miles": 252 },
+      { "mph": 60, "miles": 230 },
+      { "mph": 65, "miles": 210 },
+      { "mph": 70, "miles": 193 },
+      { "mph": 75, "miles": 177 },
+      { "mph": 80, "miles": 163 },
+      { "mph": 85, "miles": 149 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 210,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 275 },
+      { "mph": 45, "miles": 259 },
+      { "mph": 50, "miles": 252 },
+      { "mph": 55, "miles": 233 },
+      { "mph": 60, "miles": 215 },
+      { "mph": 65, "miles": 199 },
+      { "mph": 70, "miles": 183 },
+      { "mph": 75, "miles": 169 },
+      { "mph": 80, "miles": 157 },
+      { "mph": 85, "miles": 144 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 256,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 317 },
+      { "mph": 45, "miles": 291 },
+      { "mph": 50, "miles": 267 },
+      { "mph": 55, "miles": 243 },
+      { "mph": 60, "miles": 221 },
+      { "mph": 65, "miles": 202 },
+      { "mph": 70, "miles": 185 },
+      { "mph": 75, "miles": 169 },
+      { "mph": 80, "miles": 155 },
+      { "mph": 85, "miles": 142 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 207,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 268 },
+      { "mph": 45, "miles": 252 },
+      { "mph": 50, "miles": 244 },
+      { "mph": 55, "miles": 225 },
+      { "mph": 60, "miles": 207 },
+      { "mph": 65, "miles": 191 },
+      { "mph": 70, "miles": 176 },
+      { "mph": 75, "miles": 162 },
+      { "mph": 80, "miles": 149 },
+      { "mph": 85, "miles": 137 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 248,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 317 },
+      { "mph": 45, "miles": 293 },
+      { "mph": 50, "miles": 270 },
+      { "mph": 55, "miles": 248 },
+      { "mph": 60, "miles": 227 },
+      { "mph": 65, "miles": 208 },
+      { "mph": 70, "miles": 191 },
+      { "mph": 75, "miles": 176 },
+      { "mph": 80, "miles": 162 },
+      { "mph": 85, "miles": 148 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 201,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 268 },
+      { "mph": 45, "miles": 253 },
+      { "mph": 50, "miles": 247 },
+      { "mph": 55, "miles": 230 },
+      { "mph": 60, "miles": 212 },
+      { "mph": 65, "miles": 197 },
+      { "mph": 70, "miles": 182 },
+      { "mph": 75, "miles": 168 },
+      { "mph": 80, "miles": 156 },
+      { "mph": 85, "miles": 143 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 245,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 309 },
+      { "mph": 45, "miles": 285 },
+      { "mph": 50, "miles": 262 },
+      { "mph": 55, "miles": 239 },
+      { "mph": 60, "miles": 219 },
+      { "mph": 65, "miles": 200 },
+      { "mph": 70, "miles": 183 },
+      { "mph": 75, "miles": 168 },
+      { "mph": 80, "miles": 154 },
+      { "mph": 85, "miles": 141 }
+     ]
+    },
+ {
+   "temp": 10,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 198,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 261 },
+      { "mph": 45, "miles": 246 },
+      { "mph": 50, "miles": 239 },
+      { "mph": 55, "miles": 222 },
+      { "mph": 60, "miles": 205 },
+      { "mph": 65, "miles": 189 },
+      { "mph": 70, "miles": 174 },
+      { "mph": 75, "miles": 161 },
+      { "mph": 80, "miles": 148 },
+      { "mph": 85, "miles": 136 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 255,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 321 },
+      { "mph": 45, "miles": 298 },
+      { "mph": 50, "miles": 276 },
+      { "mph": 55, "miles": 254 },
+      { "mph": 60, "miles": 234 },
+      { "mph": 65, "miles": 215 },
+      { "mph": 70, "miles": 198 },
+      { "mph": 75, "miles": 183 },
+      { "mph": 80, "miles": 169 },
+      { "mph": 85, "miles": 155 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 177,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 264 },
+      { "mph": 45, "miles": 252 },
+      { "mph": 50, "miles": 242 },
+      { "mph": 55, "miles": 226 },
+      { "mph": 60, "miles": 211 },
+      { "mph": 65, "miles": 196 },
+      { "mph": 70, "miles": 182 },
+      { "mph": 75, "miles": 169 },
+      { "mph": 80, "miles": 157 },
+      { "mph": 85, "miles": 145 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 251,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 313 },
+      { "mph": 45, "miles": 290 },
+      { "mph": 50, "miles": 268 },
+      { "mph": 55, "miles": 246 },
+      { "mph": 60, "miles": 225 },
+      { "mph": 65, "miles": 206 },
+      { "mph": 70, "miles": 190 },
+      { "mph": 75, "miles": 175 },
+      { "mph": 80, "miles": 161 },
+      { "mph": 85, "miles": 148 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 175,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 257 },
+      { "mph": 45, "miles": 245 },
+      { "mph": 50, "miles": 235 },
+      { "mph": 55, "miles": 219 },
+      { "mph": 60, "miles": 203 },
+      { "mph": 65, "miles": 188 },
+      { "mph": 70, "miles": 175 },
+      { "mph": 75, "miles": 162 },
+      { "mph": 80, "miles": 150 },
+      { "mph": 85, "miles": 138 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 244,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 313 },
+      { "mph": 45, "miles": 292 },
+      { "mph": 50, "miles": 271 },
+      { "mph": 55, "miles": 250 },
+      { "mph": 60, "miles": 231 },
+      { "mph": 65, "miles": 213 },
+      { "mph": 70, "miles": 196 },
+      { "mph": 75, "miles": 181 },
+      { "mph": 80, "miles": 168 },
+      { "mph": 85, "miles": 154 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 170,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 257 },
+      { "mph": 45, "miles": 246 },
+      { "mph": 50, "miles": 238 },
+      { "mph": 55, "miles": 223 },
+      { "mph": 60, "miles": 208 },
+      { "mph": 65, "miles": 194 },
+      { "mph": 70, "miles": 181 },
+      { "mph": 75, "miles": 168 },
+      { "mph": 80, "miles": 156 },
+      { "mph": 85, "miles": 145 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 241,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 305 },
+      { "mph": 45, "miles": 284 },
+      { "mph": 50, "miles": 263 },
+      { "mph": 55, "miles": 242 },
+      { "mph": 60, "miles": 222 },
+      { "mph": 65, "miles": 204 },
+      { "mph": 70, "miles": 188 },
+      { "mph": 75, "miles": 173 },
+      { "mph": 80, "miles": 160 },
+      { "mph": 85, "miles": 147 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 168,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 251 },
+      { "mph": 45, "miles": 240 },
+      { "mph": 50, "miles": 231 },
+      { "mph": 55, "miles": 216 },
+      { "mph": 60, "miles": 201 },
+      { "mph": 65, "miles": 186 },
+      { "mph": 70, "miles": 173 },
+      { "mph": 75, "miles": 161 },
+      { "mph": 80, "miles": 149 },
+      { "mph": 85, "miles": 138 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 261,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 329 },
+      { "mph": 45, "miles": 304 },
+      { "mph": 50, "miles": 280 },
+      { "mph": 55, "miles": 256 },
+      { "mph": 60, "miles": 234 },
+      { "mph": 65, "miles": 215 },
+      { "mph": 70, "miles": 197 },
+      { "mph": 75, "miles": 181 },
+      { "mph": 80, "miles": 167 },
+      { "mph": 85, "miles": 153 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 182,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 271 },
+      { "mph": 45, "miles": 257 },
+      { "mph": 50, "miles": 246 },
+      { "mph": 55, "miles": 228 },
+      { "mph": 60, "miles": 211 },
+      { "mph": 65, "miles": 196 },
+      { "mph": 70, "miles": 181 },
+      { "mph": 75, "miles": 168 },
+      { "mph": 80, "miles": 155 },
+      { "mph": 85, "miles": 143 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 257,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 321 },
+      { "mph": 45, "miles": 296 },
+      { "mph": 50, "miles": 271 },
+      { "mph": 55, "miles": 247 },
+      { "mph": 60, "miles": 226 },
+      { "mph": 65, "miles": 206 },
+      { "mph": 70, "miles": 189 },
+      { "mph": 75, "miles": 173 },
+      { "mph": 80, "miles": 159 },
+      { "mph": 85, "miles": 145 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 179,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 264 },
+      { "mph": 45, "miles": 250 },
+      { "mph": 50, "miles": 238 },
+      { "mph": 55, "miles": 220 },
+      { "mph": 60, "miles": 204 },
+      { "mph": 65, "miles": 188 },
+      { "mph": 70, "miles": 173 },
+      { "mph": 75, "miles": 160 },
+      { "mph": 80, "miles": 148 },
+      { "mph": 85, "miles": 136 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 249,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 321 },
+      { "mph": 45, "miles": 298 },
+      { "mph": 50, "miles": 275 },
+      { "mph": 55, "miles": 252 },
+      { "mph": 60, "miles": 231 },
+      { "mph": 65, "miles": 212 },
+      { "mph": 70, "miles": 195 },
+      { "mph": 75, "miles": 179 },
+      { "mph": 80, "miles": 165 },
+      { "mph": 85, "miles": 152 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 174,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 263 },
+      { "mph": 45, "miles": 251 },
+      { "mph": 50, "miles": 241 },
+      { "mph": 55, "miles": 225 },
+      { "mph": 60, "miles": 209 },
+      { "mph": 65, "miles": 194 },
+      { "mph": 70, "miles": 179 },
+      { "mph": 75, "miles": 166 },
+      { "mph": 80, "miles": 154 },
+      { "mph": 85, "miles": 142 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 246,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 313 },
+      { "mph": 45, "miles": 289 },
+      { "mph": 50, "miles": 266 },
+      { "mph": 55, "miles": 244 },
+      { "mph": 60, "miles": 223 },
+      { "mph": 65, "miles": 204 },
+      { "mph": 70, "miles": 187 },
+      { "mph": 75, "miles": 172 },
+      { "mph": 80, "miles": 158 },
+      { "mph": 85, "miles": 145 }
+     ]
+    },
+ {
+   "temp": 20,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 172,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 257 },
+      { "mph": 45, "miles": 244 },
+      { "mph": 50, "miles": 234 },
+      { "mph": 55, "miles": 217 },
+      { "mph": 60, "miles": 201 },
+      { "mph": 65, "miles": 186 },
+      { "mph": 70, "miles": 172 },
+      { "mph": 75, "miles": 159 },
+      { "mph": 80, "miles": 147 },
+      { "mph": 85, "miles": 135 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 256,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 324 },
+      { "mph": 45, "miles": 301 },
+      { "mph": 50, "miles": 279 },
+      { "mph": 55, "miles": 256 },
+      { "mph": 60, "miles": 235 },
+      { "mph": 65, "miles": 217 },
+      { "mph": 70, "miles": 200 },
+      { "mph": 75, "miles": 185 },
+      { "mph": 80, "miles": 171 },
+      { "mph": 85, "miles": 157 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 179,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 255 },
+      { "mph": 45, "miles": 245 },
+      { "mph": 50, "miles": 228 },
+      { "mph": 55, "miles": 216 },
+      { "mph": 60, "miles": 204 },
+      { "mph": 65, "miles": 191 },
+      { "mph": 70, "miles": 179 },
+      { "mph": 75, "miles": 167 },
+      { "mph": 80, "miles": 156 },
+      { "mph": 85, "miles": 145 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 253,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 316 },
+      { "mph": 45, "miles": 292 },
+      { "mph": 50, "miles": 270 },
+      { "mph": 55, "miles": 247 },
+      { "mph": 60, "miles": 226 },
+      { "mph": 65, "miles": 208 },
+      { "mph": 70, "miles": 192 },
+      { "mph": 75, "miles": 177 },
+      { "mph": 80, "miles": 163 },
+      { "mph": 85, "miles": 150 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 177,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 249 },
+      { "mph": 45, "miles": 238 },
+      { "mph": 50, "miles": 221 },
+      { "mph": 55, "miles": 209 },
+      { "mph": 60, "miles": 196 },
+      { "mph": 65, "miles": 184 },
+      { "mph": 70, "miles": 171 },
+      { "mph": 75, "miles": 160 },
+      { "mph": 80, "miles": 149 },
+      { "mph": 85, "miles": 138 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 245,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 315 },
+      { "mph": 45, "miles": 294 },
+      { "mph": 50, "miles": 274 },
+      { "mph": 55, "miles": 252 },
+      { "mph": 60, "miles": 232 },
+      { "mph": 65, "miles": 214 },
+      { "mph": 70, "miles": 198 },
+      { "mph": 75, "miles": 183 },
+      { "mph": 80, "miles": 170 },
+      { "mph": 85, "miles": 156 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 172,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 248 },
+      { "mph": 45, "miles": 240 },
+      { "mph": 50, "miles": 224 },
+      { "mph": 55, "miles": 213 },
+      { "mph": 60, "miles": 201 },
+      { "mph": 65, "miles": 189 },
+      { "mph": 70, "miles": 177 },
+      { "mph": 75, "miles": 166 },
+      { "mph": 80, "miles": 155 },
+      { "mph": 85, "miles": 145 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 243,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 308 },
+      { "mph": 45, "miles": 286 },
+      { "mph": 50, "miles": 265 },
+      { "mph": 55, "miles": 244 },
+      { "mph": 60, "miles": 223 },
+      { "mph": 65, "miles": 206 },
+      { "mph": 70, "miles": 190 },
+      { "mph": 75, "miles": 175 },
+      { "mph": 80, "miles": 162 },
+      { "mph": 85, "miles": 149 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 170,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 243 },
+      { "mph": 45, "miles": 233 },
+      { "mph": 50, "miles": 217 },
+      { "mph": 55, "miles": 206 },
+      { "mph": 60, "miles": 194 },
+      { "mph": 65, "miles": 182 },
+      { "mph": 70, "miles": 170 },
+      { "mph": 75, "miles": 159 },
+      { "mph": 80, "miles": 148 },
+      { "mph": 85, "miles": 138 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 262,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 332 },
+      { "mph": 45, "miles": 307 },
+      { "mph": 50, "miles": 282 },
+      { "mph": 55, "miles": 258 },
+      { "mph": 60, "miles": 235 },
+      { "mph": 65, "miles": 216 },
+      { "mph": 70, "miles": 199 },
+      { "mph": 75, "miles": 183 },
+      { "mph": 80, "miles": 169 },
+      { "mph": 85, "miles": 155 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 184,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 261 },
+      { "mph": 45, "miles": 250 },
+      { "mph": 50, "miles": 231 },
+      { "mph": 55, "miles": 218 },
+      { "mph": 60, "miles": 204 },
+      { "mph": 65, "miles": 191 },
+      { "mph": 70, "miles": 177 },
+      { "mph": 75, "miles": 166 },
+      { "mph": 80, "miles": 154 },
+      { "mph": 85, "miles": 143 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 259,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 324 },
+      { "mph": 45, "miles": 298 },
+      { "mph": 50, "miles": 273 },
+      { "mph": 55, "miles": 249 },
+      { "mph": 60, "miles": 227 },
+      { "mph": 65, "miles": 208 },
+      { "mph": 70, "miles": 190 },
+      { "mph": 75, "miles": 175 },
+      { "mph": 80, "miles": 161 },
+      { "mph": 85, "miles": 147 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 181,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 255 },
+      { "mph": 45, "miles": 243 },
+      { "mph": 50, "miles": 223 },
+      { "mph": 55, "miles": 210 },
+      { "mph": 60, "miles": 197 },
+      { "mph": 65, "miles": 183 },
+      { "mph": 70, "miles": 170 },
+      { "mph": 75, "miles": 158 },
+      { "mph": 80, "miles": 147 },
+      { "mph": 85, "miles": 136 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 251,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 323 },
+      { "mph": 45, "miles": 300 },
+      { "mph": 50, "miles": 277 },
+      { "mph": 55, "miles": 254 },
+      { "mph": 60, "miles": 232 },
+      { "mph": 65, "miles": 214 },
+      { "mph": 70, "miles": 197 },
+      { "mph": 75, "miles": 182 },
+      { "mph": 80, "miles": 168 },
+      { "mph": 85, "miles": 154 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 176,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 255 },
+      { "mph": 45, "miles": 244 },
+      { "mph": 50, "miles": 227 },
+      { "mph": 55, "miles": 214 },
+      { "mph": 60, "miles": 202 },
+      { "mph": 65, "miles": 189 },
+      { "mph": 70, "miles": 176 },
+      { "mph": 75, "miles": 164 },
+      { "mph": 80, "miles": 153 },
+      { "mph": 85, "miles": 142 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 248,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 316 },
+      { "mph": 45, "miles": 292 },
+      { "mph": 50, "miles": 269 },
+      { "mph": 55, "miles": 245 },
+      { "mph": 60, "miles": 224 },
+      { "mph": 65, "miles": 206 },
+      { "mph": 70, "miles": 189 },
+      { "mph": 75, "miles": 174 },
+      { "mph": 80, "miles": 160 },
+      { "mph": 85, "miles": 147 }
+     ]
+    },
+ {
+   "temp": 30,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 174,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 249 },
+      { "mph": 45, "miles": 238 },
+      { "mph": 50, "miles": 220 },
+      { "mph": 55, "miles": 207 },
+      { "mph": 60, "miles": 194 },
+      { "mph": 65, "miles": 181 },
+      { "mph": 70, "miles": 169 },
+      { "mph": 75, "miles": 157 },
+      { "mph": 80, "miles": 146 },
+      { "mph": 85, "miles": 135 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 258,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 325 },
+      { "mph": 45, "miles": 304 },
+      { "mph": 50, "miles": 282 },
+      { "mph": 55, "miles": 261 },
+      { "mph": 60, "miles": 240 },
+      { "mph": 65, "miles": 222 },
+      { "mph": 70, "miles": 205 },
+      { "mph": 75, "miles": 190 },
+      { "mph": 80, "miles": 175 },
+      { "mph": 85, "miles": 161 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 179,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 249 },
+      { "mph": 45, "miles": 242 },
+      { "mph": 50, "miles": 224 },
+      { "mph": 55, "miles": 213 },
+      { "mph": 60, "miles": 201 },
+      { "mph": 65, "miles": 190 },
+      { "mph": 70, "miles": 178 },
+      { "mph": 75, "miles": 167 },
+      { "mph": 80, "miles": 156 },
+      { "mph": 85, "miles": 145 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 254,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 318 },
+      { "mph": 45, "miles": 295 },
+      { "mph": 50, "miles": 274 },
+      { "mph": 55, "miles": 252 },
+      { "mph": 60, "miles": 232 },
+      { "mph": 65, "miles": 213 },
+      { "mph": 70, "miles": 196 },
+      { "mph": 75, "miles": 181 },
+      { "mph": 80, "miles": 167 },
+      { "mph": 85, "miles": 153 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 177,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 243 },
+      { "mph": 45, "miles": 235 },
+      { "mph": 50, "miles": 217 },
+      { "mph": 55, "miles": 206 },
+      { "mph": 60, "miles": 194 },
+      { "mph": 65, "miles": 182 },
+      { "mph": 70, "miles": 170 },
+      { "mph": 75, "miles": 159 },
+      { "mph": 80, "miles": 149 },
+      { "mph": 85, "miles": 138 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 247,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 317 },
+      { "mph": 45, "miles": 297 },
+      { "mph": 50, "miles": 277 },
+      { "mph": 55, "miles": 257 },
+      { "mph": 60, "miles": 237 },
+      { "mph": 65, "miles": 220 },
+      { "mph": 70, "miles": 203 },
+      { "mph": 75, "miles": 188 },
+      { "mph": 80, "miles": 174 },
+      { "mph": 85, "miles": 160 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 172,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 243 },
+      { "mph": 45, "miles": 236 },
+      { "mph": 50, "miles": 220 },
+      { "mph": 55, "miles": 210 },
+      { "mph": 60, "miles": 199 },
+      { "mph": 65, "miles": 188 },
+      { "mph": 70, "miles": 176 },
+      { "mph": 75, "miles": 165 },
+      { "mph": 80, "miles": 155 },
+      { "mph": 85, "miles": 144 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 19,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 244,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 310 },
+      { "mph": 45, "miles": 289 },
+      { "mph": 50, "miles": 269 },
+      { "mph": 55, "miles": 248 },
+      { "mph": 60, "miles": 229 },
+      { "mph": 65, "miles": 211 },
+      { "mph": 70, "miles": 195 },
+      { "mph": 75, "miles": 180 },
+      { "mph": 80, "miles": 166 },
+      { "mph": 85, "miles": 153 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 19,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 170,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 237 },
+      { "mph": 45, "miles": 230 },
+      { "mph": 50, "miles": 213 },
+      { "mph": 55, "miles": 203 },
+      { "mph": 60, "miles": 192 },
+      { "mph": 65, "miles": 180 },
+      { "mph": 70, "miles": 169 },
+      { "mph": 75, "miles": 158 },
+      { "mph": 80, "miles": 148 },
+      { "mph": 85, "miles": 138 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "up",
+   "city": 264,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 334 },
+      { "mph": 45, "miles": 310 },
+      { "mph": 50, "miles": 286 },
+      { "mph": 55, "miles": 263 },
+      { "mph": 60, "miles": 241 },
+      { "mph": 65, "miles": 221 },
+      { "mph": 70, "miles": 204 },
+      { "mph": 75, "miles": 188 },
+      { "mph": 80, "miles": 173 },
+      { "mph": 85, "miles": 158 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "up",
+   "city": 183,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 256 },
+      { "mph": 45, "miles": 246 },
+      { "mph": 50, "miles": 227 },
+      { "mph": 55, "miles": 215 },
+      { "mph": 60, "miles": 202 },
+      { "mph": 65, "miles": 189 },
+      { "mph": 70, "miles": 176 },
+      { "mph": 75, "miles": 165 },
+      { "mph": 80, "miles": 154 },
+      { "mph": 85, "miles": 143 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "off",
+   "windows": "down",
+   "city": 260,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 326 },
+      { "mph": 45, "miles": 301 },
+      { "mph": 50, "miles": 277 },
+      { "mph": 55, "miles": 254 },
+      { "mph": 60, "miles": 232 },
+      { "mph": 65, "miles": 213 },
+      { "mph": 70, "miles": 195 },
+      { "mph": 75, "miles": 179 },
+      { "mph": 80, "miles": 165 },
+      { "mph": 85, "miles": 151 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "off",
+   "windows": "down",
+   "city": 181,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 250 },
+      { "mph": 45, "miles": 239 },
+      { "mph": 50, "miles": 219 },
+      { "mph": 55, "miles": 207 },
+      { "mph": 60, "miles": 194 },
+      { "mph": 65, "miles": 182 },
+      { "mph": 70, "miles": 169 },
+      { "mph": 75, "miles": 158 },
+      { "mph": 80, "miles": 147 },
+      { "mph": 85, "miles": 136 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "up",
+   "city": 252,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 325 },
+      { "mph": 45, "miles": 303 },
+      { "mph": 50, "miles": 281 },
+      { "mph": 55, "miles": 259 },
+      { "mph": 60, "miles": 238 },
+      { "mph": 65, "miles": 219 },
+      { "mph": 70, "miles": 202 },
+      { "mph": 75, "miles": 186 },
+      { "mph": 80, "miles": 172 },
+      { "mph": 85, "miles": 158 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "up",
+   "city": 176,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 249 },
+      { "mph": 45, "miles": 241 },
+      { "mph": 50, "miles": 223 },
+      { "mph": 55, "miles": 211 },
+      { "mph": 60, "miles": 199 },
+      { "mph": 65, "miles": 187 },
+      { "mph": 70, "miles": 175 },
+      { "mph": 75, "miles": 164 },
+      { "mph": 80, "miles": 153 },
+      { "mph": 85, "miles": 142 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 21,
+   "ac": "off",
+   "lights": "on",
+   "windows": "down",
+   "city": 249,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 317 },
+      { "mph": 45, "miles": 295 },
+      { "mph": 50, "miles": 272 },
+      { "mph": 55, "miles": 250 },
+      { "mph": 60, "miles": 229 },
+      { "mph": 65, "miles": 210 },
+      { "mph": 70, "miles": 193 },
+      { "mph": 75, "miles": 178 },
+      { "mph": 80, "miles": 164 },
+      { "mph": 85, "miles": 150 }
+     ]
+    },
+ {
+   "temp": 40,
+   "wheelsize": 21,
+   "ac": "on",
+   "lights": "on",
+   "windows": "down",
+   "city": 174,
+   "hwy": 
+    [ 
+      { "mph": 40, "miles": 243 },
+      { "mph": 45, "miles": 234 },
+      { "mph": 50, "miles": 216 },
+      { "mph": 55, "miles": 204 },
+      { "mph": 60, "miles": 192 },
+      { "mph": 65, "miles": 180 },
+      { "mph": 70, "miles": 167 },
+      { "mph": 75, "miles": 156 },
+      { "mph": 80, "miles": 146 },
+      { "mph": 85, "miles": 135 }
+     ]
+    }
+]
