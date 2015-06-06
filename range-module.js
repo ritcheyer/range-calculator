@@ -106,14 +106,14 @@ function updateUI() {
     rangeSettings.ac            = $("#controls-current-ac").val();
     rangeSettings.wheels        = $("#controls-current-wheel").val();
 
-    $("#batt_70D_stat .wf-datalabel-content").html(getRangesForBatteries("70D"));
-    $("#batt_85_stat .wf-datalabel-content").html(getRangesForBatteries("85"));
-    $("#batt_85D_stat .wf-datalabel-content").html(getRangesForBatteries("85D"));
-    $("#batt_P85D_stat .wf-datalabel-content").html(getRangesForBatteries("P85D"));
-    $("#batt_70D_stat .wf-datalabel-units").html(configJson.speedLabel.toUpperCase());
-    $("#batt_85_stat .wf-datalabel-units").html(configJson.speedLabel.toUpperCase());
-    $("#batt_85D_stat .wf-datalabel-units").html(configJson.speedLabel.toUpperCase());
-    $("#batt_P85D_stat .wf-datalabel-units").html(configJson.speedLabel.toUpperCase());
+    $(".battery-option.BT70D .battery-range-content").html(getRangesForBatteries("70D"));
+    $(".battery-option.BT85 .battery-range-content").html(getRangesForBatteries("85"));
+    $(".battery-option.BT85D .battery-range-content").html(getRangesForBatteries("85D"));
+    $(".battery-option.P85D .battery-range-content").html(getRangesForBatteries("P85D"));
+    $(".battery-option.BT70D .battery-range-units").html(configJson.speedLabel.toUpperCase());
+    $(".battery-option.BT85 .battery-range-units").html(configJson.speedLabel.toUpperCase());
+    $(".battery-option.BT85D .battery-range-units").html(configJson.speedLabel.toUpperCase());
+    $(".battery-option.P85D .battery-range-units").html(configJson.speedLabel.toUpperCase());
 
     $("#controls-speed .controls-data").html(rangeSettings.speed);
     $("#controls-speed .controls-unit").html(configJson.measurement);
