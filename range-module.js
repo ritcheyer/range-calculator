@@ -53,17 +53,18 @@ $(document).ready(function() {
     })
     .done(function() {
         initializeRangeData();
+
         // default settings
         rangeSettings.speedIndex = configJson.speedIndex;
-        rangeSettings.speed     = configJson.speed;
-        rangeSettings.tempIndex = configJson.temperatureIndex;
-        rangeSettings.temp      = configJson.temperature;
-        rangeSettings.ac        = configJson.ac.replace("ac","").toLowerCase();;
-        rangeSettings.wheels    = configJson.wheels.replace("Wheels","");
-        rangeSettings.windows   = configJson.windows.replace("Windows","").toLowerCase();
-        rangeSettings.season    = configJson.season;
-        rangeSettings.road      = configJson.road;
-        rangeSettings.lights    = configJson.lights.replace("Lights","").toLowerCase();
+        rangeSettings.speed      = configJson.speed;
+        rangeSettings.tempIndex  = configJson.temperatureIndex;
+        rangeSettings.temp       = configJson.temperature;
+        rangeSettings.ac         = configJson.ac.replace("ac","").toLowerCase();;
+        rangeSettings.wheels     = configJson.wheels.replace("Wheels","");
+        rangeSettings.windows    = configJson.windows.replace("Windows","").toLowerCase();
+        rangeSettings.season     = configJson.season;
+        rangeSettings.road       = configJson.road;
+        rangeSettings.lights     = configJson.lights.replace("Lights","").toLowerCase();
     });
 });
 
