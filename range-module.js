@@ -71,8 +71,7 @@ $(document).ready(function() {
 // ***********************
 // grab the range data JSON files and set into local obj
 function initializeRangeData() {
-    var jsonDir = "/range/data/";
-    // debug.error('start initializeRangeData');
+    var jsonDir = "data/";
     var region = Drupal.settings.tesla.unit;
 
     // grab the 4 json file data for imperial unit countries
