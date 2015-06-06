@@ -1,7 +1,7 @@
 
 
 var configJson;
-var configJsonPath = "/range/data/config.json";
+var configJsonPath = "data/config.json";
 var rangeData = {};
 var rangeSettings = {};
 
