@@ -35,7 +35,25 @@ $range-color: #008dff;
     text-align: center;
 }
 
+[class*="range-controls-"] {
+    display: inline-block;
+}
 
+// range spinner styling
+// TODO: split out to it's own component
+// ---
+.spinner-controls {
+    [class*="spinner-controls"] {
+        color: $range-color;
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px 10px;
+        vertical-align: middle;
+        font-size: 20px;
+    }
+
+    .disabled { color: $grey-6; }
+}
 .wf-datalabel {
     position: relative;
     float:left;
