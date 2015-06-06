@@ -1,0 +1,115 @@
+<html>
+<head>
+    <script src="/scripts/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script src="/scripts/underscore-1.6.0.js" type="text/javascript"></script>
+    <link href="http://www-newtest04.sjc05.teslamotors.com/sites/default/files/css/css_xWUUItTducSW9s-AS12LeS18C0Z5BLLE1kBnlNi5xKY.css" rel="stylesheet" type="text/css">
+    <link href="range-module.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <script src="range-module.js" type="text/javascript"></script>
+    <section id="range" class="row hide-on-mobile">
+        <div class="container">
+            <div class="section-content">
+                <h1 class="section-title">Range Per Charge</h1>
+                <div class="range-hero">
+                    <div class="range-hero-wheels-left ninteen"></div>
+                    <div class="range-hero-wheels-right ninteen"></div>
+                </div>
+                <div class="batt-stats">
+                    <div class="wf-datalabel" id="batt_70D_stat">
+                        <div class="wf-datalabel-container">
+                            <div class="wf-datalabel-title"><img src="images/models_rangemodule_battery_icons_70d.png" width="60%" /></div>
+                            <span class="wf-datalabel-content"> -- </span>
+                            <span class="wf-datalabel-units"></span>
+                        </div>
+                    </div>
+                    <div class="wf-datalabel" id="batt_85_stat">
+                        <div class="wf-datalabel-container">
+                            <div class="wf-datalabel-title"><img src="images/models_rangemodule_battery_icons_85.png" width="60%" /></div>
+                            <span class="wf-datalabel-content"> -- </span>
+                            <span class="wf-datalabel-units"></span>
+                        </div>
+                    </div>
+                    <div class="wf-datalabel" id="batt_85D_stat">
+                        <div class="wf-datalabel-container">
+                            <div class="wf-datalabel-title"><img src="images/models_rangemodule_battery_icons_85d.png" width="60%" /></div>
+                            <span class="wf-datalabel-content"> -- </span>
+                            <span class="wf-datalabel-units"></span>
+                        </div>
+                    </div>
+                    <div class="wf-datalabel" id="batt_P85D_stat">
+                        <div class="wf-datalabel-container">
+                            <div class="wf-datalabel-title"><img src="images/models_rangemodule_battery_icons_p85d.png" width="60%" /></div>
+                            <span class="wf-datalabel-content"> -- </span>
+                            <span class="wf-datalabel-units"></span>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="controls">
+                    <!-- SPEED CONTROL BOX -->
+                    <div class="wf-datalabel" id="controls-speed">
+                        <div class="wf-datalabel-container">
+                            <h5 class="controls-datalabel-title">Speed</h5>
+                            <div class="controls-control-box">
+                                <span class="controls-data">65</span>&nbsp;<span class="controls-unit">MI</span>
+                                <div class="controls-arrows">
+                                    <div class="controls-arrows-up"></div>
+                                    <div class="controls-separator"></div>
+                                    <div class="controls-arrows-down"></div>
+                                </div>
+                                <input type="hidden" name="controls-current-speed" id="controls-current-speed" value="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator">&nbsp;</div>
+                    <!-- TEMPURATURE CONTROL BOX -->
+                    <div class="wf-datalabel" id="controls-temp">
+                        <div class="wf-datalabel-container">
+                            <h5 class="controls-datalabel-title">Outside Tempurature</h5>
+                            <div class="controls-control-box">
+                                <span class="controls-data">70</span>&nbsp;<span class="controls-unit">&deg;</span>
+                                <div class="controls-arrows">
+                                    <div class="controls-arrows-up"></div>
+                                    <div class="controls-separator"></div>
+                                    <div class="controls-arrows-down"></div>
+                                </div>
+                                <input type="hidden" name="controls-current-temp" id="controls-current-temp" value="" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AC CONTROL BUTTON -->
+                    <div id="controls-ac">
+                        <div id="controls-ac-onoff" class="acoff">&nbsp;</div>
+                        <input type="hidden" name="controls-current-ac" id="controls-current-ac" value="off" />
+                    </div>
+                    <div class="separator">&nbsp;</div>
+                    <!-- WHEELS CONTROL BOXES -->
+                    <div class="wf-datalabel" id="controls-wheels-19">
+                        <div class="wf-datalabel-container">
+                            <h5 class="controls-datalabel-title">Wheels</h5>
+                            <div class="controls-control-box">
+                                <div class="controls-wheels-19-icon"><img src="http://localdev.teslamotors.com/tesla_theme/images/models/models_rangemodule_wheels_19.jpg" /></div>
+                                <div class="controls-data">19&Prime;</div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="controls-current-wheel" id="controls-current-wheel" value="" />
+                    </div>
+                    <div class="wf-datalabel" id="controls-wheels-21">
+                        <div class="wf-datalabel-container">
+                            <h5 class="controls-datalabel-title">&nbsp;</h5>
+                            <div class="controls-control-box">
+                                <span class="controls-wheels-21-icon"><img src="http://localdev.teslamotors.com/tesla_theme/images/models/models_rangemodule_wheels_21.jpg" /></span>
+                                <span class="controls-data">21&Prime;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator">&nbsp;</div>
+                <div class="separator">&nbsp;</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
