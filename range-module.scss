@@ -31,24 +31,120 @@ $selected-border: #39f;
 }
 
 [class*="range-controls-"] {
-    display: inline-block;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    &:first-child {
+        margin-left: 0;
+        margin-right: 10px;
+        padding-right: 30px;
+        border-right: 2px solid #ccc;
+    }
+    &:last-child {
+        margin-left: 20px;
+        padding-left: 20px;
+        border-left: 2px solid #ccc;
+    }
+    .section-subtitle {
+        @include fontsize-rem(16px);
+        color: $grey-3;
+    }
 }
 
 // range spinner styling
 // TODO: split out to it's own component
 // ---
+.spinner-container {
+    margin-top: 15px;
+    position: relative;
+    width: 190px;
+    min-height: 65px;
+    border: 1px solid $grey-c;
+    background-color: $grey-background-color-light;
+    float: left;
+    overflow: hidden;
+    .controls-data {
+        margin: 0;
+        position: relative;
+        display: block;
+        color: #000;
+        font-weight: 200;
+        border: 0;
+        box-shadow: 0 0 0 transparent;
+        padding: 16px 10px;
+        min-height: 67px;
+        // overflow: hidden;
+        line-height: 1;
+    }
+    .spinner-number,
+    .spinner-unit {
+        display: block;
+        float: left;
+    }
+    .spinner-number {
+        @include fontParams(35px, 35px);
+    }
+    .spinner-unit {
+        @include fontParams(30px, 30px);
+        font-weight: 100;
+        .range-controls--speed & {
+            @include fontParams(15px, 15px);
+            @include scale(top, 17px);
+            @include scale(left, 3px);
+            font-weight: 400;
+            position: relative;
+        }
+    }
+}
 .spinner-controls {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin: 0;
     [class*="spinner-controls"] {
         color: $range-color;
         cursor: pointer;
-        display: inline-block;
+        display: block;
         padding: 5px 10px;
         vertical-align: middle;
         font-size: 20px;
+        width: 40px;
+        border: 0;
+        background-color: transparent;
+        &::before {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url("/images/icon/icon-arrow-down.png");
+            background-size: 100%;
+            border: 1px solid #333;
+        }
+        &:focus { outline: 0; }
     }
-
-    .disabled { color: $grey-6; }
+    .spinner-controls--increase {
+        border-bottom: 1px solid $white;
+    }
+    .spinner-controls--decrease {
+        border-top: 1px solid $grey-c;
+    }
+    [disabled="disabled"],
+    .disabled {
+        color: $grey-6;
+        cursor: default;
+    }
 }
+
+
+
+// ---
+// end spinner module
+// ---
+
+
+
 .wf-datalabel {
     position: relative;
     float:left;
@@ -61,6 +157,11 @@ $selected-border: #39f;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 100;
+    display: inline-block;
+    min-height: 24px;
+}
+.badge-motortype {
+    margin-bottom: 20px;
 }
 
 .battery-range-units {
@@ -110,6 +211,122 @@ $selected-border: #39f;
 
 .wheels-rear.wheels-nineteen   { background-image: url(images/rangemodule_wheels_right_19.png); }
 .wheels-rear.wheels-twentyone  { background-image: url(images/rangemodule_wheels_right_21.png); }
+
+// Wheels
+.controls-wheelsize {
+    @include scale(margin-top, 15px);
+    .selected {
+        @include scale(padding, 17px 17px 17px 59px);
+        border: 2px solid #3399ff;
+        background-position: 9px 8px
+    }
+}
+
+// Air Conditioning
+.range-controls--airconditioning {
+    max-width: 120px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("images/icons/icon-button-off.png");
+    .lt-ie9 & {
+        background-image: url("images/icons/icon-button-off.png");
+    }
+    label {
+        width:  120px;
+        height: 121px;
+        position: relative;
+        display: block;
+        cursor: pointer;
+    }
+}
+.climate-ac   { background-image: url("images/icons/icon-button-ac.png");   }
+.climate-heat { background-image: url("images/icons/icon-button-heat.png"); }
+.climate-off  { background-image: url("images/icons/icon-button-off.png");  }
+
+.controls-text  {
+    .climate-on & { color: $white; }
+    .climate-off & { color: $grey-6; }
+}
+
+.range-controls--airconditioning {
+    cursor: pointer;
+
+    .controls-text {
+        @include no-select;
+        @include fontsize-rem(8px);
+        @include scale(padding-top, 30px);
+
+        margin: 0;
+        display: block;
+        position: relative;
+        z-index: 1;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+.icon-airconditioning {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: auto;
+}
+.climate-on.climate-ac {
+    .icon-airconditioning {
+        background-image: url('/images/icons/icon-ac-on.svg');
+        .lt-ie9 & { background-image: url('/images/icons/icon-ac-on.png'); }
+    }
+}
+.climate-off.climate-ac {
+    .icon-airconditioning {
+        background-image: url('/images/icons/icon-ac-off.svg');
+        .lt-ie9 & { background-image: url('/images/icons/icon-ac-off.png'); }
+    }
+}
+.climate-on.climate-heat {
+    .icon-airconditioning {
+        background-image: url('/images/icons/icon-heat-on.svg');
+        .lt-ie9 & { background-image: url('/images/icons/icon-heat-on.png'); }
+    }
+}
+.climate-off.climate-heat {
+    .icon-airconditioning {
+        background-image: url('/images/icons/icon-heat-off.svg');
+        .lt-ie9 & { background-image: url('/images/icons/icon-heat-off.png'); }
+    }
+}
+
+
+// Wheels
+.range-controls--wheels {
+    label {
+        width: 190px;
+        height: 65px;
+        border: 1px solid $grey-c;
+        display: inline-block;
+        color: $black;
+        @include scale(padding, 18px 18px 18px 60px);
+        @include fontsize-rem(20px);
+        background-position: 10px 9px;
+        background-repeat: no-repeat;
+        background-size: 44px;
+        background-color: $grey-background-color-light;
+        background-image: url("images/icons/icon-19-wheel.svg");
+        .lt-ie9 & { background-image: url("images/icons/icon-19-wheel.png"); }
+        + label {
+            background-image: url("images/icons/icon-21-wheel.svg");
+            .lt-ie9 & { background-image: url("images/icons/icon-21-wheel.png"); }
+        }
+    }
+}
+
+
+
+
+// old after here
+
 
 .controls {
     margin-top: 50px;

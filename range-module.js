@@ -55,6 +55,7 @@ $(document).ready(function() {
         initializeRangeData();
 
         // default settings
+        rangeSettings.wheelFPS   = configJson.wheelFPS;
         rangeSettings.speedIndex = configJson.speedIndex;
         rangeSettings.speed      = configJson.speed;
         rangeSettings.tempIndex  = configJson.temperatureIndex;
@@ -66,7 +67,9 @@ $(document).ready(function() {
         rangeSettings.road       = configJson.road;
         rangeSettings.lights     = configJson.lights.replace("Lights","").toLowerCase();
     });
+
 });
+    var needIeFallback = $('html').hasClass('lt-ie9');
 
 // ***********************
 // grab the range data JSON files and set into local obj
@@ -98,17 +101,13 @@ function initializeRangeData() {
 // Update the UI elements after calculations
 function updateUI() {
 
-    // new
-    rangeSettings.speedIndex    = $(".range-controls--speed .controls-data").data('oldvalue');
-
-    // old
-    // rangeSettings.speedIndex    = $("#controls-current-speed").val();
+    rangeSettings.speedIndex    = $(".range-controls--speed .spinner-number").data('oldvalue');
+    rangeSettings.tempIndex     = $(".range-controls--temperature .spinner-number").data('oldvalue');
+    rangeSettings.ac            = $(".range-controls--airconditioning .controls-data").data('value');
 
     rangeSettings.speed         = configJson.speedRange[rangeSettings.speedIndex];
-    rangeSettings.tempIndex     = $("#controls-current-temp").val();
     rangeSettings.temp          = configJson.outsideTemps[rangeSettings.tempIndex];
-    rangeSettings.ac            = $("#controls-current-ac").val();
-    rangeSettings.wheels        = $("#controls-current-wheel").val();
+    rangeSettings.wheels        = $(".range-controls--wheels input:checked").val();
 
     $(".battery-option.BT70D .battery-range-content").html(getRangesForBatteries("70D"));
     $(".battery-option.BT85 .battery-range-content").html(getRangesForBatteries("85"));
@@ -119,62 +118,87 @@ function updateUI() {
     $(".battery-option.BT85D .battery-range-units").html(configJson.speedLabel.toUpperCase());
     $(".battery-option.P85D .battery-range-units").html(configJson.speedLabel.toUpperCase());
 
-    // new
-    $(".range-controls--speed .controls-data").val(rangeSettings.speed);
+    $(".range-controls--speed .spinner-number").text(rangeSettings.speed);
+    $(".range-controls--speed .spinner-unit").text(configJson.measurement);
+    $(".range-controls--temperature .spinner-number").text(rangeSettings.temp);
 
-    // old
-    // $("#controls-speed .controls-data").html(rangeSettings.speed);
-    $("#controls-speed .controls-unit").html(configJson.measurement);
-    $("#controls-temp .controls-data").html(rangeSettings.temp);
-
-    if (rangeSettings.wheels === "19") {
-        $("#controls-wheels-21 .controls-control-box").removeClass("selected");
-        $("#controls-wheels-19 .controls-control-box").addClass("selected");
-
+    if (rangeSettings.wheels == '19') {
         $(".wheels-front").removeClass("wheels-twentyone").addClass("wheels-nineteen");
         $(".wheels-rear").removeClass("wheels-twentyone").addClass("wheels-nineteen");
     } else {
-        $("#controls-wheels-19 .controls-control-box").removeClass("selected");
-        $("#controls-wheels-21 .controls-control-box").addClass("selected");
-
         $(".wheels-front").removeClass("wheels-nineteen").addClass("wheels-twentyone");
         $(".wheels-rear").removeClass("wheels-nineteen").addClass("wheels-twentyone");
     }
 
-    $("#controls-ac #controls-ac-onoff").removeClass();
-
-    if (rangeSettings.tempIndex >= 3) {
-        $("#controls-ac #controls-ac-onoff").addClass("heat" + rangeSettings.ac);
-    }
-    else {
-        $("#controls-ac #controls-ac-onoff").addClass("ac" + rangeSettings.ac);
-    }
+    // speed spinner
+    var increaseSpeedRangeSpinner = $(".range-controls--speed .spinner-controls--increase"),
+        decreaseSpeedRangeSpinner = $(".range-controls--speed .spinner-controls--decrease");
 
     if (parseInt(rangeSettings.speedIndex) === configJson.speedRange.length - 1) {
-        $("#controls-speed .controls-arrows-up").addClass("disabled");
-        $(".range-controls--speed .spinner-controls--increase").addClass("disabled");
-    }
-    else if (parseInt(rangeSettings.speedIndex) === 0) {
-        $("#controls-speed .controls-arrows-down").addClass("disabled");
-        $(".range-controls--speed .spinner-controls--decrease").addClass("disabled");
-    }
-    else {
-        $("#controls-speed .controls-arrows-up").removeClass("disabled");
-        $("#controls-speed .controls-arrows-down").removeClass("disabled");
-        $(".range-controls--speed .spinner-controls--increase").removeClass("disabled");
-        $(".range-controls--speed .spinner-controls--decrease").removeClass("disabled");
+        if(needIeFallback) {
+            increaseSpeedRangeSpinner.addClass("disabled");
+        } else {
+            increaseSpeedRangeSpinner.attr("disabled", "disabled");
+        }
+    } else if (parseInt(rangeSettings.speedIndex) === 0) {
+        if(needIeFallback) {
+            decreaseSpeedRangeSpinner.addClass("disabled");
+        } else {
+            decreaseSpeedRangeSpinner.attr("disabled", "disabled");
+        }
+    } else {
+        if(needIeFallback) {
+            increaseSpeedRangeSpinner.removeClass("disabled");
+            decreaseSpeedRangeSpinner.removeClass("disabled");
+        } else {
+            increaseSpeedRangeSpinner.removeAttr("disabled");
+            decreaseSpeedRangeSpinner.removeAttr("disabled");
+        }
     }
 
-    // temperature
+    // temperature spinner
+    var increaseTemperatureRangeSpinner = $(".range-controls--temperature .spinner-controls--increase"),
+        decreaseTemperatureRangeSpinner = $(".range-controls--temperature .spinner-controls--decrease");
+
     if (parseInt(rangeSettings.tempIndex) === configJson.outsideTemps.length - 1) {
-        $("#controls-temp .controls-arrows-down").addClass("disabled");
+        if(needIeFallback) {
+            decreaseTemperatureRangeSpinner.addClass("disabled");
+        } else {
+            decreaseTemperatureRangeSpinner.attr("disabled", "disabled");
+        }
+    } else if (parseInt(rangeSettings.tempIndex) === 0) {
+        if(needIeFallback) {
+            increaseTemperatureRangeSpinner.addClass("disabled");
+        } else {
+            increaseTemperatureRangeSpinner.attr("disabled", "disabled");
+        }
+    } else {
+        if(needIeFallback) {
+            increaseTemperatureRangeSpinner.removeClass("disabled");
+            decreaseTemperatureRangeSpinner.removeClass("disabled");
+        } else {
+            increaseTemperatureRangeSpinner.removeAttr("disabled");
+            decreaseTemperatureRangeSpinner.removeAttr("disabled");
+        }
     }
-    else if (parseInt(rangeSettings.tempIndex) === 0) {
-        $("#controls-temp .controls-arrows-up").addClass("disabled");
-    }
-    else {
-        $("#controls-temp .controls-arrows-up").removeClass("disabled");
-        $("#controls-temp .controls-arrows-down").removeClass("disabled");
+
+    // air conditioning spinner
+    if (rangeSettings.tempIndex >= 3) {
+
+        $(".range-controls--airconditioning .controls-text").text('Heat ' + rangeSettings.ac);
+        if(rangeSettings.ac === "on") {
+            $(".range-controls--airconditioning").removeClass('climate-on climate-off climate-heat climate-ac').addClass('climate-on climate-heat');
+        } else {
+            $(".range-controls--airconditioning").removeClass('climate-on climate-off climate-heat climate-ac').addClass('climate-off climate-heat');
+        }
+    } else {
+
+        $(".range-controls--airconditioning .controls-text").text('AC ' + rangeSettings.ac);
+        if(rangeSettings.ac === "on") {
+            $(".range-controls--airconditioning").removeClass('climate-on climate-off climate-heat climate-ac').addClass('climate-on climate-ac');
+        } else {
+            $(".range-controls--airconditioning").removeClass('climate-on climate-off climate-heat climate-ac').addClass('climate-off climate-ac');
+        }
     }
 
 }
@@ -205,78 +229,75 @@ function getRangesForBatteries(batteryId, speed) {
 // ***********************
 // initialize the click handlers for controls
 function initButtons() {
-
-    // old
     if ($(".range-controls--speed .spinner-controls--increase").length) {
         $(".range-controls--speed .spinner-controls--increase").unbind("click");
         $(".range-controls--speed .spinner-controls--increase").click(function() {
-
-            // new
-            setSpeedIndex($(".range-controls--speed .controls-data").data('oldvalue'), "up");
-
-            // old
-            // setSpeedIndex($("#controls-current-speed").val(), "up");
+            setSpeedIndex($(".range-controls--speed .spinner-number").data('oldvalue'), "up");
         });
     }
     if ($(".range-controls--speed .spinner-controls--decrease").length) {
         $(".range-controls--speed .spinner-controls--decrease").unbind("click");
         $(".range-controls--speed .spinner-controls--decrease").click(function() {
-
-            // new
-            setSpeedIndex($(".range-controls--speed .controls-data").data('oldvalue'), "down");
-
-            // old
-            // setSpeedIndex($("#controls-current-speed").val(), "down");
+            setSpeedIndex($(".range-controls--speed .spinner-number").data('oldvalue'), "down");
+        });
+    }
+    if ($(".range-controls--temperature .spinner-controls--increase").length) {
+        $(".range-controls--temperature .spinner-controls--increase").unbind("click");
+        $(".range-controls--temperature .spinner-controls--increase").click(function() {
+            setTemperature($(".range-controls--temperature .spinner-number").data('oldvalue'), "up");
+        });
+    }
+    if ($(".range-controls--temperature .spinner-controls--decrease").length) {
+        $(".range-controls--temperature .spinner-controls--decrease").unbind("click");
+        $(".range-controls--temperature .spinner-controls--decrease").click(function() {
+            setTemperature($(".range-controls--temperature .spinner-number").data('oldvalue'), "down");
+        });
+    }
+    if ($(".range-controls--airconditioning .controls-data").length) {
+        $(".range-controls--airconditioning .controls-data").unbind("click");
+        $(".range-controls--airconditioning .controls-data").click(function() {
+            setAC($(".range-controls--airconditioning .controls-data").data('value'));
         });
     }
 
-    // old
-    if ($("#controls-temp .controls-arrows-up").length) {
-        $("#controls-temp .controls-arrows-up").unbind("click");
-        $("#controls-temp .controls-arrows-up").click(function() {
-            setTemperature($("#controls-current-temp").val(), "up");
+    if ($(".range-controls--wheels input").length) {
+        $(".range-controls--wheels input").unbind("click");
+        $(".range-controls--wheels input").click(function() {
+            setWheels($(this));
         });
     }
-    if ($("#controls-temp .controls-arrows-down").length) {
-        $("#controls-temp .controls-arrows-down").unbind("click");
-        $("#controls-temp .controls-arrows-down").click(function() {
-            setTemperature($("#controls-current-temp").val(), "down");
-        });
-    }
-    if ($("#controls-ac #controls-ac-onoff").length) {
-        $("#controls-ac #controls-ac-onoff").unbind("click");
-        $("#controls-ac #controls-ac-onoff").click(function() {
-            setAC($("#controls-current-ac").val());
-        });
-    }
-    if ($("#controls-wheels-19").length) {
-        $("#controls-wheels-19").unbind("click");
-        $("#controls-wheels-19").click(function() {
-            setWheels(19);
-        });
-    }
-    if ($("#controls-wheels-21").length) {
-        $("#controls-wheels-21").unbind("click");
-        $("#controls-wheels-21").click(function() {
-            setWheels(21);
-        });
-    }
-
 }
 
 // ***********************
 // initialize default values for controls
 function initDefaultData() {
+    $(".range-controls--speed .spinner-number").data('oldvalue', configJson.speedIndex);
+    $(".range-controls--temperature .spinner-number").data('oldvalue', configJson.temperatureIndex);
 
-    // new
-    $(".range-controls--speed .controls-data").data('oldvalue', configJson.speedIndex);
+    $(".range-controls--airconditioning .controls-data").data('value', rangeSettings.ac)
+    $(".range-controls--wheels input").data('value', rangeSettings.wheels);
+}
 
-    // old
-    // $("#controls-current-speed").val(configJson.speedIndex);
-    $("#controls-current-temp").val(configJson.temperatureIndex);
-    $("#controls-current-ac").val(rangeSettings.ac);
-    $("#controls-current-wheel").val(rangeSettings.wheels);
+// ***********************
+// initialize wheel animation
+function initializeAnimations() {
+    console.log("initializing animations");
+    var framerate = rangeSettings.wheelFPS[rangeSettings.speedIndex];
 
+     try {
+         // wheels sprite sheet animation
+         this.$el.find('#front-wheels, #rear-wheels').sprite({
+            fps: framerate,
+            no_of_frames: 12
+         });
+     }
+     catch (error) {
+         //alert("initializeAnimations: Could not init wheel sprite.");
+     }
+
+     // this.running = true;
+     // module.on('scroll', this.handleScroll, this);
+     // module.on('scrollStop', this.handleScrollStop, this);
 }
 
 // ***********************
@@ -295,12 +316,7 @@ function setSpeedIndex(currentSpeed, direction) {
     }
 
     rangeSettings.speedIndex = newSpeedIndex;
-
-    // new
-    $(".range-controls--speed .controls-data").data('oldvalue', newSpeedIndex);
-
-    // old
-    // $("#controls-current-speed").val(newSpeedIndex);
+    $(".range-controls--speed .spinner-number").data('oldvalue', newSpeedIndex);
 
     updateUI();
 }
@@ -319,9 +335,7 @@ function setTemperature(currentTemp, direction) {
     }
 
     rangeSettings.tempIndex = newTempIndex;
-
-    // old
-    $("#controls-current-temp").val(newTempIndex);
+    $(".range-controls--temperature .spinner-number").data('oldvalue', newTempIndex);
 
     updateUI();
 }
@@ -331,13 +345,15 @@ function setTemperature(currentTemp, direction) {
 function setAC(onOff) {
 
     if (onOff === "on") {
+        $(".range-controls--airconditioning .controls-data").prop('checked', false);
         rangeSettings.ac = "off";
     }
     else {
+        $(".range-controls--airconditioning .controls-data").prop('checked', true);
         rangeSettings.ac = "on";
     }
 
-    $("#controls-current-ac").val(rangeSettings.ac);
+    $(".range-controls--airconditioning .controls-data").data('value', rangeSettings.ac);
 
     updateUI();
 }
@@ -345,7 +361,22 @@ function setAC(onOff) {
 // ***********************
 // set the current wheels based on user selection
 function setWheels(wheelSize) {
-    rangeSettings.wheels = wheelSize;
-    $("#controls-current-wheel").val(wheelSize);
+
+    // console.log('setting me');
+
+    // console.log(wheelSize);
+    // console.log(wheelSize.val());
+
+    rangeSettings.wheels = wheelSize.val();
+    $('.controls-wheelsize label').removeClass('selected');
+
+    if(wheelSize.val() == '19') {
+        $(".wheelsize-nineteen").addClass('selected');
+    } else {
+        $(".wheelsize-twentyone").addClass('selected');
+    }
+
+
+
     updateUI();
 }

@@ -8,158 +8,91 @@
     </head>
     <body>
 
-    <section id="range-per-charge" class="section-range hide-on-mobile">
-        <div class="section-intro">
-            <div class="container">
-                <h1 class="section-title">Range Per Charge</h1>
-                <div class="range-hero">
-                    <div class="wheels-front wheels-nineteen"></div>
-                    <div class="wheels-rear wheels-nineteen"></div>
-                </div>
-                <table class="batterytype-ranges">
-                    <tbody>
-                        <tr>
-                            <td width="25%" class="battery-option BT70D">
-                                <h1 class="badge-motortype">70</h1>
-                                <span class="battery-range-content"> &mdash; </span>
-                                <span class="battery-range-units"></span>
-                            </td>
-                            <td width="25%" class="battery-option BT85">
-                                <h1 class="badge-motortype">85</h1>
-                                <span class="battery-range-content"> &mdash; </span>
-                                <span class="battery-range-units"></span>
-                            </td>
-                            <td width="25%" class="battery-option BT85D">
-                                <h1 class="badge-motortype">85D</h1>
-                                <span class="battery-range-content"> &mdash; </span>
-                                <span class="battery-range-units"></span>
-                            </td>
-                            <td width="25%" class="battery-option P85D">
-                                <h1 class="badge-motortype">P85D</h1>
-                                <span class="battery-range-content"> &mdash; </span>
-                                <span class="battery-range-units"></span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="range-controls">
-                    <div class="range-controls--speed">
-                        <h2 class="section-subtitle">Speed</h2>
-                        <div class="spinner-container">
-                            <input type="text" class="controls-data" value="65">
-                            <span class="controls-unit">MPH</span>
-                            <p class="spinner-controls">
-                                <button class="spinner-controls--increase">&plus;</button>
-                                <button class="spinner-controls--decrease">&ndash;</button>
-                            </p>
-                        </div>
+        <section id="range-per-charge" class="section-range hide-on-mobile">
+            <div class="section-intro">
+                <div class="container">
+                    <h1 class="section-title">Range Per Charge</h1>
+                    <div class="range-hero">
+                        <div class="wheels-front wheels-nineteen"></div>
+                        <div class="wheels-rear wheels-nineteen"></div>
                     </div>
+                    <table class="batterytype-ranges">
+                        <tbody>
+                            <tr>
+                                <td width="25%" class="battery-option BT70D">
+                                    <h1 class="badge-motortype">70</h1>
+                                    <span class="battery-range-content"> &mdash; </span>
+                                    <span class="battery-range-units"></span>
+                                </td>
+                                <td width="25%" class="battery-option BT85">
+                                    <h1 class="badge-motortype">85</h1>
+                                    <span class="battery-range-content"> &mdash; </span>
+                                    <span class="battery-range-units"></span>
+                                </td>
+                                <td width="25%" class="battery-option BT85D">
+                                    <h1 class="badge-motortype">85D</h1>
+                                    <span class="battery-range-content"> &mdash; </span>
+                                    <span class="battery-range-units"></span>
+                                </td>
+                                <td width="25%" class="battery-option P85D">
+                                    <h1 class="badge-motortype">P85D</h1>
+                                    <span class="battery-range-content"> &mdash; </span>
+                                    <span class="battery-range-units"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="range-controls">
+                        <div class="range-controls--speed">
+                            <h2 class="section-subtitle">Speed</h2>
+                            <div class="spinner-container">
+                                <p class="controls-data">
+                                    <span class="spinner-number"></span>
+                                    <span class="spinner-unit"></span>
+                                </p>
+                                <p class="spinner-controls">
+                                    <button class="spinner-controls--increase">&plus;</button>
+                                    <button class="spinner-controls--decrease">&ndash;</button>
+                                </p>
+                            </div>
+                        </div>
 
+                        <div class="range-controls--temperature">
+                            <h2 class="section-subtitle">Outside Temperature</h2>
+                            <div class="spinner-container">
+                                <p class="controls-data">
+                                    <span class="spinner-number"></span>
+                                    <span class="spinner-unit">&deg;</span>
+                                </p>
+                                <p class="spinner-controls">
+                                    <button class="spinner-controls--increase">&plus;</button>
+                                    <button class="spinner-controls--decrease">&ndash;</button>
+                                </p>
+                            </div>
+                        </div>
 
-<!-- old after here -->
+                        <div class="range-controls--airconditioning">
+                            <label>
+                                <p class="controls-text">AC Off</p>
+                                <i class="icon-airconditioning"></i>
+                                <input type="radio" class="sr-only controls-data">
+                            </label>
+                        </div>
 
-        <div class="container">
-            <div class="section-content">
-                <!--
-                <div class="range-hero">
-                    <div class="range-hero-wheels-left ninteen"></div>
-                    <div class="range-hero-wheels-right ninteen"></div>
-                </div>
-                <div class="batt-stats">
-                    <div class="wf-datalabel" id="batt_70D_stat">
-                        <div class="wf-datalabel-container">
-                            <div class="wf-datalabel-title"><img src="images/models_rangemodule_battery_icons_70d.png" width="60%" /></div>
-                            <span class="wf-datalabel-content"> -- </span>
-                            <span class="wf-datalabel-units"></span>
-                        </div>
-                    </div>
-                    <div class="wf-datalabel" id="batt_85_stat">
-                        <div class="wf-datalabel-container">
-                            <div class="wf-datalabel-title"><img src="images/models_rangemodule_battery_icons_85.png" width="60%" /></div>
-                            <span class="wf-datalabel-content"> -- </span>
-                            <span class="wf-datalabel-units"></span>
-                        </div>
-                    </div>
-                    <div class="wf-datalabel" id="batt_85D_stat">
-                        <div class="wf-datalabel-container">
-                            <div class="wf-datalabel-title"><img src="images/models_rangemodule_battery_icons_85d.png" width="60%" /></div>
-                            <span class="wf-datalabel-content"> -- </span>
-                            <span class="wf-datalabel-units"></span>
-                        </div>
-                    </div>
-                    <div class="wf-datalabel" id="batt_P85D_stat">
-                        <div class="wf-datalabel-container">
-                            <div class="wf-datalabel-title"><img src="images/models_rangemodule_battery_icons_p85d.png" width="60%" /></div>
-                            <span class="wf-datalabel-content"> -- </span>
-                            <span class="wf-datalabel-units"></span>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <div style="clear:both;"></div>
-                <div class="controls">
-                    <!-- SPEED CONTROL BOX -->
-                    <div class="wf-datalabel" id="controls-speed">
-                        <div class="wf-datalabel-container">
-                            <h5 class="controls-datalabel-title">Speed</h5>
-                            <div class="controls-control-box">
-                                <span class="controls-data">65</span>&nbsp;<span class="controls-unit">MPH</span>
-                                <div class="controls-arrows">
-                                    <div class="controls-arrows-up"></div>
-                                    <div class="controls-separator"></div>
-                                    <div class="controls-arrows-down"></div>
-                                </div>
-                                <input type="hidden" name="controls-current-speed" id="controls-current-speed" value="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="separator">&nbsp;</div>
-                    <!-- TEMPURATURE CONTROL BOX -->
-                    <div class="wf-datalabel" id="controls-temp">
-                        <div class="wf-datalabel-container">
-                            <h5 class="controls-datalabel-title">Outside Tempurature</h5>
-                            <div class="controls-control-box">
-                                <span class="controls-data">70</span>&nbsp;<span class="controls-unit">&deg;</span>
-                                <div class="controls-arrows">
-                                    <div class="controls-arrows-up"></div>
-                                    <div class="controls-separator"></div>
-                                    <div class="controls-arrows-down"></div>
-                                </div>
-                                <input type="hidden" name="controls-current-temp" id="controls-current-temp" value="" />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- AC CONTROL BUTTON -->
-                    <div id="controls-ac">
-                        <div id="controls-ac-onoff" class="acoff">&nbsp;</div>
-                        <input type="hidden" name="controls-current-ac" id="controls-current-ac" value="off" />
-                    </div>
-                    <div class="separator">&nbsp;</div>
-                    <!-- WHEELS CONTROL BOXES -->
-                    <div class="wf-datalabel" id="controls-wheels-19">
-                        <div class="wf-datalabel-container">
-                            <h5 class="controls-datalabel-title">Wheels</h5>
-                            <div class="controls-control-box">
-                                <div class="controls-wheels-19-icon"><img src="images/models_rangemodule_wheels_19.jpg" /></div>
-                                <div class="controls-data">19&Prime;</div>
-                            </div>
-                        </div>
-                        <input type="hidden" name="controls-current-wheel" id="controls-current-wheel" value="" />
-                    </div>
-                    <div class="wf-datalabel" id="controls-wheels-21">
-                        <div class="wf-datalabel-container">
-                            <h5 class="controls-datalabel-title">&nbsp;</h5>
-                            <div class="controls-control-box">
-                                <span class="controls-wheels-21-icon"><img src="images/models_rangemodule_wheels_21.jpg" /></span>
-                                <span class="controls-data">21&Prime;</span>
+                        <div class="range-controls--wheels">
+                            <h2 class="section-subtitle">Wheels</h2>
+                            <div class="controls-wheelsize">
+                                <label class="wheelsize-nineteen selected">
+                                    <input type="radio" class="sr-only controls-data" name="group1" value="19" checked> 19"
+                                </label>
+                                <label class="wheelsize-twentyone">
+                                    <input type="radio" class="sr-only controls-data" name="group1" value="21"> 21"
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="separator">&nbsp;</div>
-                <div class="separator">&nbsp;</div>
             </div>
-        </div>
-    </section>
-</body>
+        </section>
+    </body>
 </html>

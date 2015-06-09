@@ -84,11 +84,6 @@
   background-size: auto 22px;
   height: 22px; }
 
-#range {
-  font-family: "Gotham A","Gotham B","M Hei PRC W45","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
-  position: relative;
-  text-align: center; }
-
 .batt-stats {
   position: relative;
   width: 75%;
@@ -112,17 +107,105 @@
   text-align: center; }
 
 [class*="range-controls-"] {
-  display: inline-block; }
+  display: block;
+  float: left;
+  margin-left: 20px; }
+  [class*="range-controls-"]:first-child {
+    margin-left: 0;
+    margin-right: 10px;
+    padding-right: 30px;
+    border-right: 2px solid #ccc; }
+  [class*="range-controls-"]:last-child {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #ccc; }
+  [class*="range-controls-"] .section-subtitle {
+    font-size: 16px;
+    font-size: 1rem;
+    color: #333333; }
 
-.spinner-controls [class*="spinner-controls"] {
-  color: #008dff;
-  cursor: pointer;
-  display: inline-block;
-  padding: 5px 10px;
-  vertical-align: middle;
-  font-size: 20px; }
-.spinner-controls .disabled {
-  color: #666666; }
+.spinner-container {
+  margin-top: 15px;
+  position: relative;
+  width: 190px;
+  min-height: 65px;
+  border: 1px solid #cccccc;
+  background-color: #f7f7f7;
+  float: left;
+  overflow: hidden; }
+  .spinner-container .controls-data {
+    margin: 0;
+    position: relative;
+    display: block;
+    color: #000;
+    font-weight: 200;
+    border: 0;
+    box-shadow: 0 0 0 transparent;
+    padding: 16px 10px;
+    min-height: 67px;
+    line-height: 1; }
+  .spinner-container .spinner-number,
+  .spinner-container .spinner-unit {
+    display: block;
+    float: left; }
+  .spinner-container .spinner-number {
+    font-size: 35px;
+    line-height: 35px;
+    font-size: 2.1875rem;
+    line-height: 2.1875rem; }
+  .spinner-container .spinner-unit {
+    font-size: 30px;
+    line-height: 30px;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    font-weight: 100; }
+    .range-controls--speed .spinner-container .spinner-unit {
+      font-size: 15px;
+      line-height: 15px;
+      font-size: 0.9375rem;
+      line-height: 0.9375rem;
+      top: 17px;
+      top: 1.0625rem;
+      left: 3px;
+      left: 0.1875rem;
+      font-weight: 400;
+      position: relative; }
+
+.spinner-controls {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  margin: 0; }
+  .spinner-controls [class*="spinner-controls"] {
+    color: #008dff;
+    cursor: pointer;
+    display: block;
+    padding: 5px 10px;
+    vertical-align: middle;
+    font-size: 20px;
+    width: 40px;
+    border: 0;
+    background-color: transparent; }
+    .spinner-controls [class*="spinner-controls"]::before {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("/images/icon/icon-arrow-down.png");
+      background-size: 100%;
+      border: 1px solid #333; }
+    .spinner-controls [class*="spinner-controls"]:focus {
+      outline: 0; }
+  .spinner-controls .spinner-controls--increase {
+    border-bottom: 1px solid white; }
+  .spinner-controls .spinner-controls--decrease {
+    border-top: 1px solid #cccccc; }
+  .spinner-controls [disabled="disabled"],
+  .spinner-controls .disabled {
+    color: #666666;
+    cursor: default; }
 
 .wf-datalabel {
   position: relative;
@@ -134,7 +217,12 @@
   color: #008dff;
   font-size: 2.5rem;
   font-style: normal;
-  font-weight: 100; }
+  font-weight: 100;
+  display: inline-block;
+  min-height: 24px; }
+
+.badge-motortype {
+  margin-bottom: 20px; }
 
 .battery-range-units {
   position: relative;
@@ -187,6 +275,113 @@
 
 .wheels-rear.wheels-twentyone {
   background-image: url(images/rangemodule_wheels_right_21.png); }
+
+.controls-wheelsize {
+  margin-top: 15px;
+  margin-top: 0.9375rem; }
+  .controls-wheelsize .selected {
+    padding: 17px 17px 17px 59px;
+    padding: 1.0625rem 1.0625rem 1.0625rem 3.6875rem;
+    border: 2px solid #3399ff;
+    background-position: 9px 8px; }
+
+.range-controls--airconditioning {
+  max-width: 120px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("images/icons/icon-button-off.png"); }
+  .lt-ie9 .range-controls--airconditioning {
+    background-image: url("images/icons/icon-button-off.png"); }
+  .range-controls--airconditioning label {
+    width: 120px;
+    height: 121px;
+    position: relative;
+    display: block;
+    cursor: pointer; }
+
+.climate-ac {
+  background-image: url("images/icons/icon-button-ac.png"); }
+
+.climate-heat {
+  background-image: url("images/icons/icon-button-heat.png"); }
+
+.climate-off {
+  background-image: url("images/icons/icon-button-off.png"); }
+
+.climate-on .controls-text {
+  color: white; }
+.climate-off .controls-text {
+  color: #666666; }
+
+.range-controls--airconditioning {
+  cursor: pointer; }
+  .range-controls--airconditioning .controls-text {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 8px;
+    font-size: 0.5rem;
+    padding-top: 30px;
+    padding-top: 1.875rem;
+    margin: 0;
+    display: block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase; }
+
+.icon-airconditioning {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: auto; }
+
+.climate-on.climate-ac .icon-airconditioning {
+  background-image: url("/images/icons/icon-ac-on.svg"); }
+  .lt-ie9 .climate-on.climate-ac .icon-airconditioning {
+    background-image: url("/images/icons/icon-ac-on.png"); }
+
+.climate-off.climate-ac .icon-airconditioning {
+  background-image: url("/images/icons/icon-ac-off.svg"); }
+  .lt-ie9 .climate-off.climate-ac .icon-airconditioning {
+    background-image: url("/images/icons/icon-ac-off.png"); }
+
+.climate-on.climate-heat .icon-airconditioning {
+  background-image: url("/images/icons/icon-heat-on.svg"); }
+  .lt-ie9 .climate-on.climate-heat .icon-airconditioning {
+    background-image: url("/images/icons/icon-heat-on.png"); }
+
+.climate-off.climate-heat .icon-airconditioning {
+  background-image: url("/images/icons/icon-heat-off.svg"); }
+  .lt-ie9 .climate-off.climate-heat .icon-airconditioning {
+    background-image: url("/images/icons/icon-heat-off.png"); }
+
+.range-controls--wheels label {
+  width: 190px;
+  height: 65px;
+  border: 1px solid #cccccc;
+  display: inline-block;
+  color: black;
+  padding: 18px 18px 18px 60px;
+  padding: 1.125rem 1.125rem 1.125rem 3.75rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  background-position: 10px 9px;
+  background-repeat: no-repeat;
+  background-size: 44px;
+  background-color: #f7f7f7;
+  background-image: url("images/icons/icon-19-wheel.svg"); }
+  .lt-ie9 .range-controls--wheels label {
+    background-image: url("images/icons/icon-19-wheel.png"); }
+  .range-controls--wheels label + label {
+    background-image: url("images/icons/icon-21-wheel.svg"); }
+    .lt-ie9 .range-controls--wheels label + label {
+      background-image: url("images/icons/icon-21-wheel.png"); }
 
 .controls {
   margin-top: 50px;
