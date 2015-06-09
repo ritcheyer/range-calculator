@@ -5,12 +5,7 @@
 
 // custom variables
 $range-color: #008dff;
-
-#range {
-    font-family: "Gotham A","Gotham B","M Hei PRC W45","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
-    position: relative;
-    text-align: center;
-}
+$selected-border: #39f;
 
 // battery section
 .batt-stats {
